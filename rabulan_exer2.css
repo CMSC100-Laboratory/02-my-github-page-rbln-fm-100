@@ -1,0 +1,78 @@
+/* =============== Table of Contents: =============== */
+/* Animations -------------------------------- line   */
+/* Font -------------------------------------- line   */
+/* Body -------------------------------------- line   */
+/* Navigation Bar ---------------------------- line 8 */
+
+/* Font: __________________________________________________ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+/* Animations: ____________________________________________ */
+@keyframes textFadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Body: __________________________________________________ */
+
+body {
+    background: #EDF6F7;
+}
+
+/* Navigation Bar: ________________________________________ */
+
+/* [Navigation Bar] */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.navbar-tab a {
+    color: #373F51; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-active-tab {
+    animation: textFadeIn 0.5s ease forwards;
+    background: #373F51;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    color: white !important;
+    padding: 0.75rem;
+    transition: box-shadow 0.25s ease;
+}
+
+.navbar-active-tab:hover {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.33);
+}
+
+.navbar-home-tab .navbar-inactive-tab {
+    margin-left: 0.5rem;
+}
+
+.navbar-center-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin-left: auto;
+}
+
+.navbar-home-tab,
+.navbar-about-tab, 
+.navbar-skills-tab, 
+.navbar-projects-tab {
+    transition: transform 0.25s ease;
+}
+
+.navbar-home-tab:hover,
+.navbar-about-tab:hover, 
+.navbar-skills-tab:hover, 
+.navbar-projects-tab:hover {
+   transform: scale(1.1);
+}

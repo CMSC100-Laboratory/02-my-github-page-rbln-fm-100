@@ -1,30 +1,83 @@
 <!DOCTYPE html>
+
+<!-- Rabulan, Francis Miguel B. -->
+<!-- CMSC 100 | U-4L -->
+
 <html>
+    <head>
+        <!-- CSS Stylesheet Link -->
+        <link rel="stylesheet" href="rabulan_exer2.css">
 
-<head>
-    <link rel="stylesheet" href="rabulan_exer2.css">
-    <title>[About] Rabulan's Portfolio</title>
-</head>
+        <!-- Tab Title -->
+        <title>[CMSC 100] Rabulan's Portfolio</title>
+    </head>
 
-<body>
-    <nav class="navbar">
-        <div class = "navbar-home-section">
-            <div class = "navbar-tab navbar-home-tab">
-                <a href = "index.html">Home</a>
-            </div>
-        </div>
-        <div class = "navbar-center-section">
-            <div class = "navbar-tab navbar-about-tab">
-                <a href = "about.html">About</a>
-            </div>
-            <div class = "navbar-tab navbar-skills-tab">
-                <a href = "skills.html">Skills</a>
-            </div>
-            <div class = "navbar-tab navbar-projects-tab">
-                <a href = "projects.html">Projects</a>
-            </div>
-        </div>
-    </nav>
-</body>
+    <body>
+        <!-- -------------------- Navigation Bar -------------------- -->
+        <nav id = "navbar">
 
+            <!-- Left section contains the Home tab. -->
+            <div id = "navbar-home-section">
+
+                <!-- Home Tab -->
+                <div class = "navbar-tab" id = "navbar-home-tab">
+                    <a href = "#home-section">Home</a>
+                </div>
+            </div>
+
+            <!-- Right section contains the other tabs.  -->
+            <div id = "navbar-right-section">
+
+                <!-- About Tab -->
+                <div class = "navbar-tab" id = "navbar-about-tab">
+                    <a href = "#about-section">About</a>
+                </div>
+
+                <!-- Skills Tab -->
+                <div class = "navbar-tab" id = "navbar-skills-tab">
+                    <a href = "#skills-section">Skills</a>
+                </div>
+
+                <!-- Projects Tab -->
+                <div class = "navbar-tab" id = "navbar-projects-tab">
+                    <a href = "#projects-section">Projects</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ------------------ Home/Title Section ------------------ -->
+        <section id = "home-section">
+            <div id = "home-subsection1">
+
+                <!-- Section Header -->
+                <p class = "section-header" id = "home-section-header1">Bienvenue!</p>
+
+                <!-- Brief Description -->
+                <p class = "section-text-content" id = "home-section-content1">
+                    Welcome to the portfolio of
+                    <span class = "highlighted-text wave-text" id = "home-section-name">
+
+                    <!-- Individual letters place within <span> tags for wave animation. -->
+                    <span>F</span><span>r</span><span>a</span><span>n</span><span>c</span><span>i</span><span>s</span>
+                    <span>R</span><span>a</span><span>b</span><span>u</span><span>l</span><span>a</span><span>n</span><span class = "non-highlighted-text">,</span>
+                    </span>
+                    <br/>
+                    a second-year <span class = "highlighted-text">BS Computer Science student</span> at the University
+                    of the Philippines Los Baños.
+                </p>
+            </div>
+        </section>
+
+        <section id = "about-section">
+
+        </section>
+
+        <section id = "skills-section">
+
+        </section>
+
+        <section id = "projects-section">
+
+        </section>
+    </body>
 </html>

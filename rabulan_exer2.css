@@ -1,78 +1,171 @@
-/* =============== Table of Contents: =============== */
-/* Animations -------------------------------- line   */
-/* Font -------------------------------------- line   */
-/* Body -------------------------------------- line   */
-/* Navigation Bar ---------------------------- line 8 */
+/* ==================== Table of Contents: ==================== */
+/* Animations ------------------------------------------ line   */
+/* Font ------------------------------------------------ line   */
+/* Body ------------------------------------------------ line   */
+/* Navigation Bar -------------------------------------- line   */
+/* Headers and Content --------------------------------- line   */
+/* Subsections ----------------------------------------- line   */
 
-/* Font: __________________________________________________ */
+/* Font: ______________________________________________________ */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 * {
     font-family: "Inter", sans-serif;
 }
 
-/* Animations: ____________________________________________ */
+/* Animations: ________________________________________________ */
+
+@keyframes textBop {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(0.5rem)}
+    100% {transform: translateY(0rem)}
+}
+
 @keyframes textFadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-/* Body: __________________________________________________ */
-
-body {
-    background: #EDF6F7;
+@keyframes textWave {
+    0% {transform: translateY(0px)}
+    12.5% {transform: translateY(-2px)}
+    25% {transform: translateY(-4px)}
+    37.5% {transform: translateY(-2px)}
+    50% {transform: translateY(0px)}
+    100% {transform: translateY(0px)}
 }
 
-/* Navigation Bar: ________________________________________ */
+.wave-text span:nth-child(1) {animation-delay: 0s;}
+.wave-text span:nth-child(2) {animation-delay: 0.2s;}
+.wave-text span:nth-child(3) {animation-delay: 0.4s;}
+.wave-text span:nth-child(4) {animation-delay: 0.6s;}
+.wave-text span:nth-child(5) {animation-delay: 0.8s;}
+.wave-text span:nth-child(6) {animation-delay: 1s;}
+.wave-text span:nth-child(7) {animation-delay: 1.2s;}
+.wave-text span:nth-child(8) {animation-delay: 1.4s;}
+.wave-text span:nth-child(9) {animation-delay: 1.6s;}
+.wave-text span:nth-child(10) {animation-delay: 1.8s;}
+.wave-text span:nth-child(11) {animation-delay: 2s;}
+.wave-text span:nth-child(12) {animation-delay: 2.2s;}
+.wave-text span:nth-child(13) {animation-delay: 2.4s;}
+.wave-text span:nth-child(14) {animation-delay: 2.6s;}
 
-/* [Navigation Bar] */
-.navbar {
+.wave-text span {
+    animation: textWave 3s linear infinite;
+    display: inline-block;
+}
+
+/* Body: ______________________________________________________ */
+
+body {
+    background-image: radial-gradient(#9ED6DE 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+/* Navigation Bar: ____________________________________________ */
+
+#navbar {
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    margin: 1rem 1rem 0 1rem;
+    padding: 1.1rem;
+    position: sticky;
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#navbar:hover {
+    background: #373F51;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.01);
+}
+
+#navbar a {
+    transition: color 0.25s ease;
+}
+
+#navbar:hover a {
+    color: white;
+}
+
+.navbar-tab {
+    transition: transform 0.25s ease;
+}
+
+.navbar-tab:hover {
+    transform: scale(1.1);
 }
 
 .navbar-tab a {
     color: #373F51; 
+    font-size: 1.33rem;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.25s ease;
+}
+        
+.navbar-tab:hover a {
+    color: #BCC5DB !important;
 }
 
-.navbar-active-tab {
-    animation: textFadeIn 0.5s ease forwards;
-    background: #373F51;
-    border-radius: 12px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
-    color: white !important;
-    padding: 0.75rem;
-    transition: box-shadow 0.25s ease;
-}
-
-.navbar-active-tab:hover {
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.33);
-}
-
-.navbar-home-tab .navbar-inactive-tab {
-    margin-left: 0.5rem;
-}
-
-.navbar-center-section {
+#navbar-right-section {
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
     margin-left: auto;
 }
 
-.navbar-home-tab,
-.navbar-about-tab, 
-.navbar-skills-tab, 
-.navbar-projects-tab {
+#navbar-home-tab {
+    margin-left: 0.55rem;
+}
+
+#navbar-projects-tab {
+    margin-right: 0.55rem;
+}
+
+/* Headers and Content: _______________________________________ */
+
+.section-header {
+    color: #556CA3;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.highlighted-text {
+    font-weight: bold;
+}
+
+.non-highlighted-text {
+    animation: none !important;
+    font-weight: normal !important;
+}
+
+.section-text-content {
+    animation: textFadeIn 1.75s ease forwards;
+    font-size: 1.25rem;
     transition: transform 0.25s ease;
 }
 
-.navbar-home-tab:hover,
-.navbar-about-tab:hover, 
-.navbar-skills-tab:hover, 
-.navbar-projects-tab:hover {
-   transform: scale(1.1);
+.section-text-content:hover {
+    transform: scale(1.05);
+}
+
+#home-section-header1 {
+    animation: textBop 1.75s ease-in-out infinite;
+    justify-self: center;
+}
+
+#home-section-content1 {
+    color: #373F51;
+    text-align: center;
+}
+
+/* Subsections: _______________________________________________ */
+
+#home-subsection1 {
+    padding: 1rem;
 }

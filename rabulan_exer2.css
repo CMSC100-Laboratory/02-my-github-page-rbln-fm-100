@@ -58,6 +58,11 @@
     display: inline-block;
 }
 
+.wave-word { 
+    display: inline-block; 
+    white-space: nowrap; 
+}
+
 /* Body: ______________________________________________________ */
 
 body {
@@ -68,6 +73,7 @@ body {
 /* Navigation Bar: ____________________________________________ */
 
 #navbar {
+    backdrop-filter: blur(2.5px);
     background: rgba(255, 255, 255, 0.33);
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
@@ -76,6 +82,9 @@ body {
     margin: 1rem 1rem 0 1rem;
     padding: 1.1rem;
     position: sticky;
+    top: 1rem;
+    -webkit-backdrop-filter: blur(2.5px);
+    z-index: 10;
     transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
@@ -124,6 +133,10 @@ body {
     margin-left: 0.55rem;
 }
 
+#navbar-home-tab a {
+    font-weight: 900;
+}
+
 #navbar-projects-tab {
     margin-right: 0.55rem;
 }
@@ -136,8 +149,17 @@ body {
     font-weight: 900;
 }
 
-.highlighted-text {
+.bold-text {
     font-weight: bold;
+}
+
+.non-bold-text {
+    animation: none !important; 
+    font-weight: normal !important;
+}
+
+.italicized-text {
+    font-style: italic;
 }
 
 .non-highlighted-text {
@@ -152,8 +174,10 @@ body {
 }
 
 .section-text-content:hover {
-    transform: scale(1.05);
+    transform: scale(1.015);
 }
+
+/* Home Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
 
 #home-section-header {
     animation: textBop 1.75s ease-in-out infinite;
@@ -165,11 +189,114 @@ body {
     text-align: center;
 }
 
+#home-section-description {
+    margin: 1.5rem;
+}
+
 #home-section-logos {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
+}
+
+/* About Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+#about-section {
+    align-self: center;
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 1.5rem;
+    -webkit-backdrop-filter: blur(1px);
+    width: 90%;
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#about-section:hover {
+    background: #58A4B0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.01);
+}
+
+#about-section-content {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #navbar-right-section { 
+        align-self: center; 
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    #navbar-home-tab,
+    #navbar-projects-tab {
+        margin: auto;
+    }
+
+    #about-section {
+        padding-bottom: 4rem;
+    }
+
+    #about-section-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #portrait-photo {
+        align-self: center;
+        margin: auto;
+    }
+}
+
+@media (min-width: 769px) { 
+    #portrait-photo { 
+        margin: 0 4rem 0 auto; 
+    } 
+}
+
+#about-section-header:hover {
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+#about-section-content1, 
+#about-section-content2,
+#about-section-content3 {
+    color: #373F51;
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+#about-section-content1:hover,
+#about-section-content2:hover,
+#about-section-content3:hover {
+    transform: scale(1.015);
+}
+
+#about-section #about-section-header,
+#about-section #about-section-content1,
+#about-section #about-section-content2, 
+#about-section #about-section-content3, {
+    transition: color 0.25s ease;
+}
+
+#about-section:hover #about-section-header,
+#about-section:hover #about-section-content1,
+#about-section:hover #about-section-content2,
+#about-section:hover #about-section-content3 {
+    color: white;
 }
 
 /* Images: ____________________________________________________ */
@@ -199,7 +326,9 @@ body {
     fill: white;
 }
 
-#github-logo-container, #linkedin-logo-container {
+#github-logo-container, 
+#linkedin-logo-container, 
+#resume-icon-container {
     transition: background 0.25s ease, transform 0.25s ease;;
 }
 
@@ -213,6 +342,11 @@ body {
     transform: scale(1.1);
 }
 
+#resume-icon-container:hover {
+    background: #00563B;
+    transform: scale(1.1);
+}
+
 .logo-container #linkedin-inner-path {
     transition: fill 0.25s ease;
 }
@@ -221,9 +355,28 @@ body {
     fill: #0077B5;
 }
 
+#portrait-photo {
+    align-self: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    height: auto;
+    width: clamp(10rem, 50%, 17rem);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#portrait-photo:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.05);
+}
 
 /* Subsections: _______________________________________________ */
 
 #home-subsection1 {
     padding: 1rem;
+}
+
+#about-subsection1 {
+    justify-self: flex-start;
+    padding: 0 4rem 2.33rem 4rem;
+    width: 67%;
 }

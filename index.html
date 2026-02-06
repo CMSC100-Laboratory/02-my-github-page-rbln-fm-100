@@ -21,7 +21,7 @@
 
                 <!-- Home Tab -->
                 <div class = "navbar-tab" id = "navbar-home-tab">
-                    <a href = "#home-section">Home</a>
+                    <a href = "#home-section">Francis R.</a>
                 </div>
             </div>
 
@@ -53,17 +53,23 @@
                 <p class = "section-header" id = "home-section-header">Kumusta!</p>
 
                 <!-- Brief Description -->
-                <p class = "section-text-content" id = "home-section-content">
-                    Welcome to the portfolio of
-                    <span class = "highlighted-text wave-text" id = "home-section-name">
+                <div id = "home-section-content">
 
-                    <!-- Individual letters place within <span> tags for wave animation. -->
-                    <span>F</span><span>r</span><span>a</span><span>n</span><span>c</span><span>i</span><span>s</span>
-                    <span>R</span><span>a</span><span>b</span><span>u</span><span>l</span><span>a</span><span>n</span><span class = "non-highlighted-text">,</span>
-                    </span>
-                    <br/>
-                    a second-year <span class = "highlighted-text">BS Computer Science student</span> at the University
-                    of the Philippines Los Baños.
+                    <!-- Brief Description -->
+                    <div class = "section-text-content" id = "home-section-description">
+                        Welcome to the portfolio of
+                        <span class = "bold-text wave-text" id = "home-section-name">
+
+                            <!-- Individual letters place within <span> tags for wave animation. -->
+                            <div class = "wave-word">
+                                <span>F</span><span>r</span><span>a</span><span>n</span><span>c</span><span>i</span><span>s</span>
+                                <span>R</span><span>a</span><span>b</span><span>u</span><span>l</span><span>a</span><span>n</span><span class = "non-bold-text">!</span>
+                            </div>
+                        </span>
+                        <br/>
+                        I am a second-year <span class = "bold-text">BS Computer Science student</span> at the <span class = "bold-text">University
+                        of the Philippines Los Baños</span>.
+                    </div>
 
                     <!-- External Website Logos -->
                     <div id = "home-section-logos">
@@ -92,13 +98,47 @@
                                 </svg>
                             </div>
                         </a>
+
+                        <!-- Resume icon opens resume in browser when clicked. -->
+                        <a href="media/Rabulan_Francis_Miguel-Resume.pdf" target="_blank">
+
+                            <!-- Container with .svg logo. -->
+                            <div class = "logo-container" id = "resume-icon-container">
+                                <svg fill="#373F51" width="4rem" height="4rem" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M808 154H616l-1-7q-4-44-37-74t-78-30-78 30-37 74l-1 7H192q-31 0-53 22t-22 53v616q0 31 22 53.5t53 22.5h616q31 0 53-22.5t22-53.5V230q0-32-22-54t-53-22zm-308-41q18 0 31 13t13 31.5-13 31.5-31 13-31-13-13-31.5 13-31.5 31-13zm31 611H297q-8 0-14-5.5t-6-13.5v-48q0-8 6-13.5t14-5.5h234q8 0 14 5.5t6 13.5v48q0 8-6 13.5t-14 5.5zm172-150H297q-8 0-14-5.5t-6-13.5v-48q0-8 6-14t14-6h406q8 0 14 6t6 14v48q0 8-6 13.5t-14 5.5zm0-150H297q-8 0-14-5.5t-6-14.5v-47q0-8 6-14t14-6h406q8 0 14 6t6 14v47q0 9-6 14.5t-14 5.5z"/>
+                                </svg>
+                            </div>
+                        </a>
                     </div>
-                </p>
+                </div>
             </div>
         </section>
 
         <section id = "about-section">
+            <div id = "about-section-content">
+                <div id = "about-subsection1">
+                    <p class = "section-header" id = "about-section-header">About Me</p>
 
+                    <p class = "section-text-content" id = "about-section-content1">
+                        I was born and raised in <span class = "bold-text">San Pablo City, Laguna</span> and was a student under
+                        the <span class = "bold-text">STEM</span> strand at <span class = "bold-text">San Pablo City Science 
+                        Integrated High School</span>. Ever since I was little, I've had an interest in <span class = "bold-text">
+                        technology, geography, video games, sports, and languages</span>.
+                    </p>
+
+                    <p class = "section-text-content" id = "about-section-content2">
+                        I am currently an <span class = "bold-text">undergraduate student</span> and an <span class = "bold-text">   
+                        aspiring front-end developer</span>, excited to <span class = "bold-text">hone my skills</span> with every
+                        <span class = "bold-text">learning opportunity</span> I get.
+                    </p>
+
+                    <p class = "section-text-content" id = "about-section-content3">
+                        <span class = "italicized-text">Sabik akong makilala ka!</span>
+                    </p>
+                </div>
+
+                <img id = "portrait-photo" src = "media/portrait.jpg" alt = "Photo of Francis Rabulan">
+            </div>
         </section>
 
         <section id = "skills-section">

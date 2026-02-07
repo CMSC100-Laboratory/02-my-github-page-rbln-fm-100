@@ -371,6 +371,12 @@ h3 .section-subheader-specific {
 }
 
 /* For Skills section subheader. */
+#skills-section-subheader1,
+#skills-section-subheader2 {
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+}
+
 #skills-section-subheader1:hover,
 #skills-section-subheader2:hover,
 #skills-section-subheader3:hover {
@@ -752,7 +758,7 @@ h3 .section-subheader-specific {
 /* For personal photo. */
 #personal-photo {
     align-self: center;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
     height: auto;
     width: clamp(12rem, 50%, 18rem);
@@ -767,7 +773,7 @@ h3 .section-subheader-specific {
 /* For project photos. */
 .projects-entry-photo {
     align-self: center;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
     height: auto;
     width: clamp(18rem, 50%, 28rem);

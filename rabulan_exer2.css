@@ -1,19 +1,25 @@
 /* Rabulan, Francis Miguel B. */
 /* CMSC 100 | U-4L */
 
+/* This CSS file styles my static web page portfolio. */
+
 /* ===================== Table of Contents ==================== */
-/* Font                                                line 19  */
-/* Animations                                          line 29  */
-/* Body                                                line 82  */
-/* Navigation Bar                                      line 90  */
-/* Text, Headers, and Content                          line 168 */
-/*      Home Section                                   line 232 */
-/*      About Section                                  line 261 */
-/*      Skills Section                                 line 324 */
-/*      Projects Section                               line 384 */
-/* Images                                              line 388 */
-/* Subsections                                         line 601 */
-/* Media Queries                                       line 708 */
+/* Font                                                line 25  */
+/* Animations                                          line 35  */
+/* Body                                                line 88  */
+/* Navigation Bar                                      line 96  */
+/* Text, Headers, and Content                          line 173 */
+/*      Home Section                                   line 269 */
+/*      About Section                                  line 297 */
+/*      Skills Section                                 line 366 */
+/*      Projects Section                               line 427 */
+/* Images                                              line 531 */
+/* Subsections                                         line 782 */
+/*      Home Section                                   line 784 */
+/*      About Section                                  line 791 */
+/*      Skills Section                                 line 801 */
+/*      Projects Section                               line 897 */
+/* Media Queries                                       line 933 */
 /* ============================================================ */
 
 /* Font: ______________________________________________________ */
@@ -138,7 +144,6 @@ body {
     transition: transform 0.25s ease;
 }
 
-/* For navigation bar tabs. */
 .navbar-tab:hover {
     transform: scale(1.1);
 }
@@ -166,6 +171,36 @@ body {
 }
 
 /* Text, Headers, and Content: ________________________________ */
+
+/* For line dividers. */
+.line-divider {
+    border: 0.075rem rgba(55, 63, 81, 0.15) solid;
+    width: 85%;
+}
+
+#projects-section .line-divider {
+    transition: border 0.25s ease;
+}
+
+#projects-section:hover .line-divider {
+    border: 0.075rem rgba(255, 255, 255, 0.15) solid;
+}
+
+/* For h2's. */
+h2 {
+    margin-top: 0.25rem;
+}
+
+/* For hyperlinks. */
+.hyperlink {
+    color: #58A4B0;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.hyperlink:hover {
+    color: #BCC5DB !important;
+}
 
 /* For bold text. */
 .bold-text {
@@ -235,6 +270,7 @@ h3 .section-subheader-specific {
 #home-section-header {
     animation: textBop 1.75s ease-in-out infinite;
     justify-self: center;
+    margin-top: 2.5rem;
     text-align: center;
 }
 
@@ -287,6 +323,14 @@ h3 .section-subheader-specific {
     animation: textBop 1.75s ease-in-out infinite;
 }
 
+#about-section #about-section-header {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#about-section:hover #about-section-header {
+    color: white;
+}
+
 /* For About section content. */
 #about-section-content {
     display: flex;
@@ -307,14 +351,12 @@ h3 .section-subheader-specific {
     transform: scale(1.015);
 }
 
-#about-section #about-section-header,
 #about-section #about-section-content1,
 #about-section #about-section-content2, 
 #about-section #about-section-content3 {
     transition: color 0.25s ease, transform 0.25s ease;
 }
 
-#about-section:hover #about-section-header,
 #about-section:hover #about-section-content1,
 #about-section:hover #about-section-content2,
 #about-section:hover #about-section-content3 {
@@ -353,6 +395,7 @@ h3 .section-subheader-specific {
 #skills-section-content2,
 #skills-section-content3,
 #skills-section-content4 {
+    color: #373F51;
     margin: 1.5rem 2.5rem 2.25rem 2.5rem;
     text-align: justify;
 }
@@ -383,7 +426,107 @@ h3 .section-subheader-specific {
 
 /* Projects Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  */
 
+/* For Projects section. */
+#projects-section {
+    align-self: center;
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 1rem 1rem 5rem 1rem;
+    -webkit-backdrop-filter: blur(1px);
+    width: 90%;
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
 
+#projects-section:hover {
+    background: #58A4B0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.01);
+}
+
+/* For Projects section headers and subheaders. */
+#projects-section-header {
+    margin: 1.5rem;
+}
+
+#projects-section-header:hover {
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+#projects-section #projects-section-header,
+#projects-section #projects-section-subheader1, 
+#projects-section #projects-section-subheader2, 
+#projects-section #projects-section-subheader3, 
+#projects-section #projects-section-subheader4 {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#projects-section:hover #projects-section-header,
+#projects-section:hover #projects-section-subheader1, 
+#projects-section:hover #projects-section-subheader2, 
+#projects-section:hover #projects-section-subheader3, 
+#projects-section:hover #projects-section-subheader4 {
+    color: white;
+}
+
+#projects-section-subheader1:hover,
+#projects-section-subheader2:hover,
+#projects-section-subheader3:hover,
+#projects-section-subheader4:hover {
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+/* For Projects section description. */
+#projects-section-description {
+    color: #373F51;
+    margin: 1.5rem;
+    text-align: justify;
+}
+
+#projects-section #projects-section-description {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#projects-section:hover #projects-section-description {
+    color: white;
+}
+
+/* For Projects section hyperlinks. */
+#projects-section .hyperlink {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#projects-section:hover .hyperlink {
+    color: #D8DBE2;
+}
+
+/* For Projects section content. */
+#projects-section-content1, 
+#projects-section-content2, 
+#projects-section-content3,
+#projects-section-content4 {
+    color: #373F51;
+    text-align: justify;
+    transition: transform 0.25s ease;
+}
+
+#projects-section #projects-section-content1,
+#projects-section #projects-section-content2,
+#projects-section #projects-section-content3,
+#projects-section #projects-section-content4 {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#projects-section:hover #projects-section-content1,
+#projects-section:hover #projects-section-content2,
+#projects-section:hover #projects-section-content3,
+#projects-section:hover #projects-section-content4 {
+    color: white;
+}
 
 /* Images: ____________________________________________________ */
 
@@ -417,12 +560,38 @@ h3 .section-subheader-specific {
     fill: white;
 }
 
+.projects-logo {
+    background: white;
+    height: 3rem;
+    width: 3rem;
+}
+
+/* For Gmail logo container background. */
+#gmail-logo-container:hover {
+    background: #EA4335;
+}
+
 /* For GitHub logo (Home section) container background. */
 #github-logo-container-home:hover {
     background: #24292E;
 }
 
-/* For Linked logo container background and path. */
+/* For GitHub logo (Skills section) container background. */
+.skills-entry-language-tools:hover #github-logo-container-skills {
+    background: #24292E;
+}
+
+.skills-entry-language-tools:hover #github-logo-container-skills path {
+    fill: white;
+}
+
+/* For GitHub logo (Projects section) container background. */
+#github-logo-container-projects1:hover,
+#github-logo-container-projects2:hover {
+    background: #24292E;
+}
+
+/* For LinkedIn logo container background and path. */
 #linkedin-logo-container:hover {
     background: #0077B5;
 }
@@ -574,22 +743,19 @@ h3 .section-subheader-specific {
     fill: white;
 }
 
-/* For GitHub logo (Skills section) container background. */
-.skills-entry-language-tools:hover #github-logo-container-skills {
-    background: #24292E;
-}
-
-.skills-entry-language-tools:hover #github-logo-container-skills path {
-    fill: white;
+/* For Google Drive logo container background. */
+#gdrive-logo-container1:hover,
+#gdrive-logo-container2:hover {
+    background: #348A53;
 }
 
 /* For personal photo. */
 #personal-photo {
     align-self: center;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
     height: auto;
-    width: clamp(10rem, 50%, 17rem);
+    width: clamp(12rem, 50%, 18rem);
     transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
@@ -598,12 +764,31 @@ h3 .section-subheader-specific {
     transform: scale(1.05);
 }
 
+/* For project photos. */
+.projects-entry-photo {
+    align-self: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    height: auto;
+    width: clamp(18rem, 50%, 28rem);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.projects-entry-photo:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.05);
+}
+
 /* Subsections: _______________________________________________ */
+
+/* Home Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
 
 /* For Home subsection 1. */
 #home-subsection1 {
     padding: 1rem;
 }
+
+/* About Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
 
 /* For About subsection 1. */
 #about-subsection1 {
@@ -612,6 +797,8 @@ h3 .section-subheader-specific {
     padding: 0 4rem 1.5rem 4rem;
     width: 67%;
 }
+
+/* Skills Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  */
 
 /* For Skills subsection 1. */
 #skills-subsection1 {
@@ -670,7 +857,7 @@ h3 .section-subheader-specific {
 /* For management skills in Skills subsection 3. */
 #skills-section-management-skills {
     display: flex;
-    gap: 1rem;
+    gap: 3.15rem;
     margin: 2.25rem auto;
     justify-content: space-between;
     width: 90%;
@@ -683,7 +870,7 @@ h3 .section-subheader-specific {
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
     flex: 1;
-    margin: 1.5rem;
+    margin: 1.5rem 0 1.5rem 0;
     min-width: 0;
     -webkit-backdrop-filter: blur(1px);
     transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
@@ -701,8 +888,46 @@ h3 .section-subheader-specific {
 }
 
 .skills-entry-management:hover .section-subheader-specific,
-.skills-entry-management:hover .section-text-content {
+.skills-entry-management:hover #skills-section-content2,
+.skills-entry-management:hover #skills-section-content3,
+.skills-entry-management:hover #skills-section-content4 {
     color: white;
+}
+
+/* Projects Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  */
+
+/* For Projects subsection 1. */
+#projects-subsection1 {
+    align-items: center;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+/* For other Projects subsections. */
+#projects-subsection2{
+    display: flex;
+    flex-direction: row;
+    gap: 3.15rem;
+    margin: 0.75rem 3rem 2rem 3rem;
+}
+
+#projects-subsection3,
+#projects-subsection4,
+#projects-subsection5 {
+    display: flex;
+    flex-direction: row;
+    gap: 3.15rem;
+    margin: 2rem 3rem;
+}
+
+/* For entries in Projects subsections 2-5. */
+.projects-entry {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 
 /* Media Queries: _____________________________________________ */
@@ -730,6 +955,23 @@ h3 .section-subheader-specific {
         flex-direction: column;
     }
 
+    /* For Skills subsection 2. */
+    #skills-subsection2{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* For languages in Skills subsection 2. */
+    #skills-section-languages {
+        margin: 0;
+    }
+
+    /* For tools in Skills subsection 2. */
+    #skills-section-tools {
+        margin: 0;
+    }
+
     /* For entries in Skills subsection 2. */
     #skills-section-languages-logos .skills-entry-language-tools,
     #skills-section-tools-logos .skills-entry-language-tools { 
@@ -738,9 +980,21 @@ h3 .section-subheader-specific {
 
     /* For management skills in Skills subsection 3. */
     #skills-section-management-skills {
-    display: flex;
-    flex-direction: column;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* For Projects subsections. */
+    #projects-subsection1,
+    #projects-subsection2,
+    #projects-subsection3,
+    #projects-subsection4,
+    #projects-subsection5 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.75rem;
+    }
 }
 
 /* Media query for screens <= 768px. */
@@ -751,7 +1005,7 @@ h3 .section-subheader-specific {
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
+        gap: 1.15rem;
     }
 
     /* For right section of navigation bar. */
@@ -784,12 +1038,6 @@ h3 .section-subheader-specific {
 
     /* For About section content. */
     #about-section-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* For Skills subsection 1. */
-    #skills-subsection1 {
         display: flex;
         flex-direction: column;
     }

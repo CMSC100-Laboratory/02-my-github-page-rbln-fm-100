@@ -1,34 +1,47 @@
-/* ==================== Table of Contents: ==================== */
-/* Animations ------------------------------------------ line   */
-/* Font ------------------------------------------------ line   */
-/* Body ------------------------------------------------ line   */
-/* Navigation Bar -------------------------------------- line   */
-/* Headers and Content --------------------------------- line   */
-/* Images ---------------------------------------------- line   */
-/* Subsections ----------------------------------------- line   */
+/* Rabulan, Francis Miguel B. */
+/* CMSC 100 | U-4L */
+
+/* ===================== Table of Contents ==================== */
+/* Font                                                line 19  */
+/* Animations                                          line 29  */
+/* Body                                                line 82  */
+/* Navigation Bar                                      line 90  */
+/* Text, Headers, and Content                          line 168 */
+/*      Home Section                                   line 211 */
+/*      About Section                                  line 237 */
+/*      Skills Section                                 line 300 */
+/*      Projects Section                               line 346 */
+/* Images                                              line 355 */
+/* Subsections                                         line 566 */
+/* Media Queries                                       line 634 */
+/* ============================================================ */
 
 /* Font: ______________________________________________________ */
 
+/* Import Inter from Google Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
+/* Assign Inter as universal font. */
 * {
     font-family: "Inter", sans-serif;
 }
 
 /* Animations: ________________________________________________ */
 
+/* For bopping text. */
 @keyframes textBop {
     0% {transform: translateY(0)}
-    50% {transform: translateY(0.5rem)}
+    50% {transform: translateY(-0.5rem)}
     100% {transform: translateY(0rem)}
 }
 
+/* For fading-in text. */
 @keyframes textFadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
+/* For waving text. */
 @keyframes textWave {
     0% {transform: translateY(0px)}
     12.5% {transform: translateY(-2px)}
@@ -38,6 +51,7 @@
     100% {transform: translateY(0px)}
 }
 
+/* For individual letter delays in waving text. */
 .wave-text span:nth-child(1) {animation-delay: 0s;}
 .wave-text span:nth-child(2) {animation-delay: 0.2s;}
 .wave-text span:nth-child(3) {animation-delay: 0.4s;}
@@ -53,11 +67,13 @@
 .wave-text span:nth-child(13) {animation-delay: 2.4s;}
 .wave-text span:nth-child(14) {animation-delay: 2.6s;}
 
+/* For individual letters in waving text. */
 .wave-text span {
     animation: textWave 3s linear infinite;
     display: inline-block;
 }
 
+/* For words in waving text. */
 .wave-word { 
     display: inline-block; 
     white-space: nowrap; 
@@ -65,6 +81,7 @@
 
 /* Body: ______________________________________________________ */
 
+/* For page background. */
 body {
     background-image: radial-gradient(#9ED6DE 1px, transparent 1px);
     background-size: 25px 25px;
@@ -72,6 +89,7 @@ body {
 
 /* Navigation Bar: ____________________________________________ */
 
+/* For navigation bar. */
 #navbar {
     backdrop-filter: blur(2.5px);
     background: rgba(255, 255, 255, 0.33);
@@ -94,20 +112,9 @@ body {
     transform: scale(1.01);
 }
 
+/* For navigation bar tab text. */
 #navbar a {
     transition: color 0.25s ease;
-}
-
-#navbar:hover a {
-    color: white;
-}
-
-.navbar-tab {
-    transition: transform 0.25s ease;
-}
-
-.navbar-tab:hover {
-    transform: scale(1.1);
 }
 
 .navbar-tab a {
@@ -117,18 +124,26 @@ body {
     text-decoration: none;
     transition: color 0.25s ease;
 }
-        
+
+#navbar:hover a {
+    color: white;
+}
+
 .navbar-tab:hover a {
     color: #BCC5DB !important;
 }
 
-#navbar-right-section {
-    display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
-    margin-left: auto;
+/* For navigation bar tabs. */
+.navbar-tab {
+    transition: transform 0.25s ease;
 }
 
+/* For navigation bar tabs. */
+.navbar-tab:hover {
+    transform: scale(1.1);
+}
+
+/* For Home tab in navigation bar. */
 #navbar-home-tab {
     margin-left: 0.55rem;
 }
@@ -137,36 +152,52 @@ body {
     font-weight: 900;
 }
 
+/* For right section of navigation bar. */
+#navbar-right-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin-left: auto;
+}
+
+/* For Projects tab in navigation bar. */
 #navbar-projects-tab {
     margin-right: 0.55rem;
 }
 
-/* Headers and Content: _______________________________________ */
+/* Text, Headers, and Content: ________________________________ */
 
+/* For bold text. */
+.bold-text {
+    font-weight: bold;
+}
+
+/* For non-bold text. */
+.non-bold-text {
+    animation: none !important; 
+    font-weight: normal !important;
+}
+
+/* For italicized text. */
+.italicized-text {
+    font-style: italic;
+}
+
+/* For section headers. */
 .section-header {
     color: #556CA3;
     font-size: 3rem;
     font-weight: 900;
 }
 
-.bold-text {
-    font-weight: bold;
+/* For section subheaders. */
+.section-subheader {
+    color: #556CA3;
+    font-size: 2rem;
+    font-weight: 800;
 }
 
-.non-bold-text {
-    animation: none !important; 
-    font-weight: normal !important;
-}
-
-.italicized-text {
-    font-style: italic;
-}
-
-.non-highlighted-text {
-    animation: none !important;
-    font-weight: normal !important;
-}
-
+/* For section content. */
 .section-text-content {
     animation: textFadeIn 1.75s ease forwards;
     font-size: 1.25rem;
@@ -179,29 +210,33 @@ body {
 
 /* Home Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
 
+/* For Home section header. */
 #home-section-header {
     animation: textBop 1.75s ease-in-out infinite;
     justify-self: center;
 }
 
+/* For Home section content. */
 #home-section-content {
     color: #373F51;
     text-align: center;
 }
 
+/* For Home section description. */
 #home-section-description {
     margin: 1.5rem;
 }
 
+/* For Home section logos. */
 #home-section-logos {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
 /* About Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
 
+/* For About section. */
 #about-section {
     align-self: center;
     backdrop-filter: blur(1px);
@@ -211,7 +246,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    margin: 1.5rem;
+    margin: 1rem;
     -webkit-backdrop-filter: blur(1px);
     width: 90%;
     transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
@@ -223,58 +258,21 @@ body {
     transform: scale(1.01);
 }
 
-#about-section-content {
-    display: flex;
-}
-
-@media (max-width: 768px) {
-    #navbar {
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    #navbar-right-section { 
-        align-self: center; 
-        margin-left: 0;
-        justify-content: center;
-    }
-
-    #navbar-home-tab,
-    #navbar-projects-tab {
-        margin: auto;
-    }
-
-    #about-section {
-        padding-bottom: 4rem;
-    }
-
-    #about-section-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #portrait-photo {
-        align-self: center;
-        margin: auto;
-    }
-}
-
-@media (min-width: 769px) { 
-    #portrait-photo { 
-        margin: 0 4rem 0 auto; 
-    } 
-}
-
+/* For About section header. */
 #about-section-header:hover {
     animation: textBop 1.75s ease-in-out infinite;
+}
+
+/* For About section content. */
+#about-section-content {
+    display: flex;
 }
 
 #about-section-content1, 
 #about-section-content2,
 #about-section-content3 {
     color: #373F51;
+    text-align: justify;
     transform-origin: left;
     transition: transform 0.25s ease;
 }
@@ -288,8 +286,8 @@ body {
 #about-section #about-section-header,
 #about-section #about-section-content1,
 #about-section #about-section-content2, 
-#about-section #about-section-content3, {
-    transition: color 0.25s ease;
+#about-section #about-section-content3 {
+    transition: color 0.25s ease, transform 0.25s ease;
 }
 
 #about-section:hover #about-section-header,
@@ -299,18 +297,75 @@ body {
     color: white;
 }
 
+/* Skills Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  */
+
+/* For Skills section header. */
+#skills-section-header {
+    margin: 1.5rem;
+}
+
+/* For Skills section subheader. */
+#skills-section-subheader1:hover,
+#skills-section-subheader2:hover {
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+#skills-section-header:hover {
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+/* For Skills section description. */
+#skills-section-description {
+    color: #373F51;
+}
+
+/* For Skills section content. */
+#skills-section-content1 {
+    margin: 1.5rem;
+    text-align: justify;
+}
+
+/* For Skills section language/tool entry. */
+.skills-entry {
+    align-content: center;
+    justify-items: center;
+}
+
+.skills-entry:hover .logo-container {
+    transform: scale(1.1);
+}
+
+.skills-entry:hover .skills-name {
+    color: #556CA3;
+    transform: scale(1.1);
+}
+
+/* For Skills section language/tool entry name. */
+.skills-name {
+    color: #373F51;
+    font-size: 1.25rem;
+    font-weight: 800;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+/* Projects Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  */
+
+
+
 /* Images: ____________________________________________________ */
 
+/* For logo container. */
 .logo-container {
     aspect-ratio: 1/1;
     background: rgba(255, 255, 255, 0.33);
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
     display: flex;
-    align-self: center;
+    align-items: center;
+    justify-content: center;
     margin: 1.5rem;
     padding: 1rem;
-    transition: box-shadow 0.25s ease;
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .logo-container:hover {
@@ -318,6 +373,7 @@ body {
     transform: scale(1.1);
 }
 
+/* For .svg paths in logo container. */
 .logo-container path {
     transition: fill 0.25s ease;
 }
@@ -326,25 +382,14 @@ body {
     fill: white;
 }
 
-#github-logo-container, 
-#linkedin-logo-container, 
-#resume-icon-container {
-    transition: background 0.25s ease, transform 0.25s ease;;
-}
-
-#github-logo-container:hover {
+/* For GitHub logo (Home section) container background. */
+#github-logo-container-home:hover {
     background: #24292E;
-    transform: scale(1.1);
 }
 
+/* For Linked logo container background and path. */
 #linkedin-logo-container:hover {
     background: #0077B5;
-    transform: scale(1.1);
-}
-
-#resume-icon-container:hover {
-    background: #00563B;
-    transform: scale(1.1);
 }
 
 .logo-container #linkedin-inner-path {
@@ -355,7 +400,156 @@ body {
     fill: #0077B5;
 }
 
-#portrait-photo {
+/* For resume icon container background. */
+#resume-icon-container:hover {
+    background: #4F7942;
+}
+
+/* For Python logo container background and path. */
+.skills-entry:hover #python-logo-container {
+    background: #4B8BBE;
+}
+
+.skills-entry:hover #python-logo-container path {
+    fill: white;
+}
+
+/* For C logo container background and path. */
+.skills-entry:hover #c-logo-container {
+    background: #A9BACD;
+}
+
+.skills-entry:hover #c-logo-container path {
+    fill: white;
+}
+
+/* For Java logo container background. */
+.skills-entry:hover #java-logo-container {
+    background: #F89A20;
+}
+
+.skills-entry:hover #java-logo-container path {
+    fill: white;
+}
+
+/* For R logo container background. */
+.skills-entry:hover #r-logo-container {
+    background: #276DC2;
+}
+
+.skills-entry:hover #r-logo-container path {
+    fill: white;
+}
+
+/* For HTML logo container background. */
+.skills-entry:hover #html-logo-container {
+    background: #F06529;
+}
+
+.skills-entry:hover #html-logo-container path {
+    fill: white;
+}
+
+/* For CSS logo container background and path. */
+.skills-entry:hover #css-logo-container {
+    background: rebeccapurple;
+}
+
+.skills-entry:hover #css-logo-container path {
+    fill: white;
+}
+
+.skills-entry:hover #css-inner-path {
+    fill: rebeccapurple !important;
+}
+
+/* For JavaScript logo container background and path. */
+.skills-entry:hover #javascript-logo-container {
+    background: #F7DF1E;
+}
+
+.skills-entry:hover #javascript-logo-container path {
+    fill: white;
+}
+
+.skills-entry:hover #javascript-inner-path {
+    fill: #F7DF1E !important;
+}
+
+/* For Google Workspace logo container background. */
+.skills-entry:hover #workspace-logo-container {
+    background: #4285F4;
+}
+
+.skills-entry:hover #workspace-logo-container path {
+    fill: white;
+}
+
+/* For Microsoft Office logo container background. */
+.skills-entry:hover #ms-office-logo-container {
+    background: #B3191C;
+}
+
+.skills-entry:hover #ms-office-logo-container path {
+    fill: white;
+}
+
+/* For Figma logo container background. */
+.skills-entry:hover #figma-logo-container {
+    background: #03011C;
+}
+
+.skills-entry:hover #figma-logo-container path {
+    fill: white;
+}
+
+/* For Visual Studio Code logo container background. */
+.skills-entry:hover #vs-code-logo-container {
+    background: #0078D7;
+}
+
+.skills-entry:hover #vs-code-logo-container path {
+    fill: white;
+}
+
+/* For Eclipse logo container background. */
+.skills-entry:hover #eclipse-logo-container {
+    background: #2C2255;
+}
+
+.skills-entry:hover #eclipse-logo-container path {
+    fill: white;
+}
+
+/* For RStudio logo container background. */
+.skills-entry:hover #rstudio-logo-container {
+    background: #71A4D4;
+}
+
+.skills-entry:hover #rstudio-logo-container path {
+    fill: white;
+}
+
+/* For Shiny logo container background. */
+.skills-entry:hover #shiny-logo-container {
+    background: #0189DC;
+}
+
+.skills-entry:hover #shiny-logo-container path {
+    fill: white;
+}
+
+/* For GitHub logo (Skills section) container background. */
+.skills-entry:hover #github-logo-container-skills {
+    background: #24292E;
+}
+
+.skills-entry:hover #github-logo-container-skills path {
+    fill: white;
+}
+
+/* For personal photo. */
+#personal-photo {
     align-self: center;
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
@@ -364,19 +558,156 @@ body {
     transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-#portrait-photo:hover {
+#personal-photo:hover {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
     transform: scale(1.05);
 }
 
 /* Subsections: _______________________________________________ */
 
+/* For Home subsection 1. */
 #home-subsection1 {
     padding: 1rem;
 }
 
+/* For About subsection 1. */
 #about-subsection1 {
     justify-self: flex-start;
-    padding: 0 4rem 2.33rem 4rem;
+    padding: 0 4rem 1.5rem 4rem;
     width: 67%;
+}
+
+/* For Skills subsection 1. */
+#skills-subsection1 {
+    align-items: center;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+/* For Skills subsection 2. */
+#skills-subsection2{
+    align-items: flex-start;
+    display: flex;
+    flex: row;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+/* For languages in Skills subsection 2. */
+#skills-section-languages {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 4rem;
+    min-width: 0;
+}
+
+/* For tools in Skills subsection 2. */
+#skills-section-tools {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 4rem;
+    min-width: 0;
+}
+
+#skills-section-languages-logos,
+#skills-section-tools-logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1rem;
+    justify-content: center;
+}
+
+/* For entries in Skills subsection 2. */
+#skills-section-languages-logos .skills-entry,
+#skills-section-tools-logos .skills-entry { 
+    flex: 0 1 8rem;
+    max-width: 12rem;
+}
+
+/* Media Queries: _____________________________________________ */
+
+/* Media query for screens >= 769px. */
+@media (min-width: 769px) { 
+
+    /* For personal photo. */
+    #personal-photo { 
+        margin: 0 4rem 0 auto; 
+    } 
+}
+
+/* Media query for screens <= 1024px. */
+@media (max-width: 1024px) {
+
+    /* For Skills subsection 1. */
+    #skills-subsection1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* For entries in Skills subsection 2. */
+    #skills-section-languages-logos .skills-entry,
+    #skills-section-tools-logos .skills-entry { 
+        flex: 0 1 2rem;
+    }
+}
+
+/* Media query for screens <= 768px. */
+@media (max-width: 768px) {
+
+    /* For navigation bar. */
+    #navbar {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* For right section of navigation bar. */
+    #navbar-right-section { 
+        align-self: center; 
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    /* For Home and Projects tab in navigation bar. */
+    #navbar-home-tab,
+    #navbar-projects-tab {
+        margin: auto;
+    }
+
+    /* For About section. */
+    #about-section {
+        padding-bottom: 3rem;
+    }
+
+    /* For About section content. */
+    #about-section-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* For Skills subsection 1. */
+    #skills-subsection1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* For entries in Skills subsection 2. */
+    #skills-section-languages-logos .skills-entry,
+    #skills-section-tools-logos .skills-entry { 
+        flex: 0 1 4rem;
+    }
+
+    /* For personal photo. */
+    #personal-photo {
+        align-self: center;
+        margin: auto;
+    }
 }

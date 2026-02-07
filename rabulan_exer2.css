@@ -8,12 +8,12 @@
 /* Navigation Bar                                      line 90  */
 /* Text, Headers, and Content                          line 168 */
 /*      Home Section                                   line 232 */
-/*      About Section                                  line 258 */
-/*      Skills Section                                 line 321 */
-/*      Projects Section                               line 380 */
-/* Images                                              line 384 */
-/* Subsections                                         line 597 */
-/* Media Queries                                       line 703 */
+/*      About Section                                  line 261 */
+/*      Skills Section                                 line 324 */
+/*      Projects Section                               line 384 */
+/* Images                                              line 388 */
+/* Subsections                                         line 601 */
+/* Media Queries                                       line 708 */
 /* ============================================================ */
 
 /* Font: ______________________________________________________ */
@@ -235,6 +235,7 @@ h3 .section-subheader-specific {
 #home-section-header {
     animation: textBop 1.75s ease-in-out infinite;
     justify-self: center;
+    text-align: center;
 }
 
 /* For Home section content. */
@@ -251,7 +252,9 @@ h3 .section-subheader-specific {
 /* For Home section logos. */
 #home-section-logos {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1rem;
     justify-content: center;
 }
 
@@ -374,6 +377,7 @@ h3 .section-subheader-specific {
     color: #373F51;
     font-size: 1.25rem;
     font-weight: 800;
+    text-align: center;
     transition: color 0.25s ease, transform 0.25s ease;
 }
 
@@ -603,6 +607,7 @@ h3 .section-subheader-specific {
 
 /* For About subsection 1. */
 #about-subsection1 {
+    align-self: center;
     justify-self: flex-start;
     padding: 0 4rem 1.5rem 4rem;
     width: 67%;
@@ -714,6 +719,11 @@ h3 .section-subheader-specific {
 /* Media query for screens <= 1024px. */
 @media (max-width: 1024px) {
 
+    /* For Home section logos. */
+    #home-section-logos .logo-container {
+        flex: 0 1 2rem;
+    }
+
     /* For Skills subsection 1. */
     #skills-subsection1 {
         display: flex;
@@ -757,9 +767,19 @@ h3 .section-subheader-specific {
         margin: auto;
     }
 
+    /* For Home section logos. */
+    #home-section-logos .logo-container {
+        flex: 0 1 4rem;
+    }
+
     /* For About section. */
     #about-section {
         padding-bottom: 3rem;
+    }
+
+    /* For About section header. */
+    #about-section-header {
+        text-align: center;
     }
 
     /* For About section content. */

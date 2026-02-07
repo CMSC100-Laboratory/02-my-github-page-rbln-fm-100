@@ -7,13 +7,13 @@
 /* Body                                                line 82  */
 /* Navigation Bar                                      line 90  */
 /* Text, Headers, and Content                          line 168 */
-/*      Home Section                                   line 211 */
-/*      About Section                                  line 237 */
-/*      Skills Section                                 line 300 */
-/*      Projects Section                               line 346 */
-/* Images                                              line 355 */
-/* Subsections                                         line 566 */
-/* Media Queries                                       line 634 */
+/*      Home Section                                   line 232 */
+/*      About Section                                  line 258 */
+/*      Skills Section                                 line 321 */
+/*      Projects Section                               line 380 */
+/* Images                                              line 384 */
+/* Subsections                                         line 597 */
+/* Media Queries                                       line 703 */
 /* ============================================================ */
 
 /* Font: ______________________________________________________ */
@@ -195,6 +195,23 @@ body {
     color: #556CA3;
     font-size: 2rem;
     font-weight: 800;
+    text-align: center;
+}
+
+/* For more specific subheaders*/
+.section-subheader-specific {
+    color: #556CA3;
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+h3 .section-subheader-specific {
+    margin-bottom: 0;
+}
+
+.section-subheader-specific:hover{
+    animation: textBop 1.75s ease-in-out infinite;
 }
 
 /* For section content. */
@@ -205,6 +222,10 @@ body {
 }
 
 .section-text-content:hover {
+    transform: scale(1.015);
+}
+
+.section-text-content-specific:hover {
     transform: scale(1.015);
 }
 
@@ -306,7 +327,8 @@ body {
 
 /* For Skills section subheader. */
 #skills-section-subheader1:hover,
-#skills-section-subheader2:hover {
+#skills-section-subheader2:hover,
+#skills-section-subheader3:hover {
     animation: textBop 1.75s ease-in-out infinite;
 }
 
@@ -325,17 +347,24 @@ body {
     text-align: justify;
 }
 
+#skills-section-content2,
+#skills-section-content3,
+#skills-section-content4 {
+    margin: 1.5rem 2.5rem 2.25rem 2.5rem;
+    text-align: justify;
+}
+
 /* For Skills section language/tool entry. */
-.skills-entry {
+.skills-entry-language-tools {
     align-content: center;
     justify-items: center;
 }
 
-.skills-entry:hover .logo-container {
+.skills-entry-language-tools:hover .logo-container {
     transform: scale(1.1);
 }
 
-.skills-entry:hover .skills-name {
+.skills-entry-language-tools:hover .skills-name {
     color: #556CA3;
     transform: scale(1.1);
 }
@@ -357,6 +386,7 @@ body {
 /* For logo container. */
 .logo-container {
     aspect-ratio: 1/1;
+    backdrop-filter: blur(1px);
     background: rgba(255, 255, 255, 0.33);
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
@@ -365,6 +395,7 @@ body {
     justify-content: center;
     margin: 1.5rem;
     padding: 1rem;
+    -webkit-backdrop-filter: blur(1px);
     transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
@@ -406,145 +437,145 @@ body {
 }
 
 /* For Python logo container background and path. */
-.skills-entry:hover #python-logo-container {
+.skills-entry-language-tools:hover #python-logo-container {
     background: #4B8BBE;
 }
 
-.skills-entry:hover #python-logo-container path {
+.skills-entry-language-tools:hover #python-logo-container path {
     fill: white;
 }
 
 /* For C logo container background and path. */
-.skills-entry:hover #c-logo-container {
+.skills-entry-language-tools:hover #c-logo-container {
     background: #A9BACD;
 }
 
-.skills-entry:hover #c-logo-container path {
+.skills-entry-language-tools:hover #c-logo-container path {
     fill: white;
 }
 
 /* For Java logo container background. */
-.skills-entry:hover #java-logo-container {
+.skills-entry-language-tools:hover #java-logo-container {
     background: #F89A20;
 }
 
-.skills-entry:hover #java-logo-container path {
+.skills-entry-language-tools:hover #java-logo-container path {
     fill: white;
 }
 
 /* For R logo container background. */
-.skills-entry:hover #r-logo-container {
+.skills-entry-language-tools:hover #r-logo-container {
     background: #276DC2;
 }
 
-.skills-entry:hover #r-logo-container path {
+.skills-entry-language-tools:hover #r-logo-container path {
     fill: white;
 }
 
 /* For HTML logo container background. */
-.skills-entry:hover #html-logo-container {
+.skills-entry-language-tools:hover #html-logo-container {
     background: #F06529;
 }
 
-.skills-entry:hover #html-logo-container path {
+.skills-entry-language-tools:hover #html-logo-container path {
     fill: white;
 }
 
 /* For CSS logo container background and path. */
-.skills-entry:hover #css-logo-container {
+.skills-entry-language-tools:hover #css-logo-container {
     background: rebeccapurple;
 }
 
-.skills-entry:hover #css-logo-container path {
+.skills-entry-language-tools:hover #css-logo-container path {
     fill: white;
 }
 
-.skills-entry:hover #css-inner-path {
+.skills-entry-language-tools:hover #css-inner-path {
     fill: rebeccapurple !important;
 }
 
 /* For JavaScript logo container background and path. */
-.skills-entry:hover #javascript-logo-container {
+.skills-entry-language-tools:hover #javascript-logo-container {
     background: #F7DF1E;
 }
 
-.skills-entry:hover #javascript-logo-container path {
+.skills-entry-language-tools:hover #javascript-logo-container path {
     fill: white;
 }
 
-.skills-entry:hover #javascript-inner-path {
+.skills-entry-language-tools:hover #javascript-inner-path {
     fill: #F7DF1E !important;
 }
 
 /* For Google Workspace logo container background. */
-.skills-entry:hover #workspace-logo-container {
+.skills-entry-language-tools:hover #workspace-logo-container {
     background: #4285F4;
 }
 
-.skills-entry:hover #workspace-logo-container path {
+.skills-entry-language-tools:hover #workspace-logo-container path {
     fill: white;
 }
 
 /* For Microsoft Office logo container background. */
-.skills-entry:hover #ms-office-logo-container {
+.skills-entry-language-tools:hover #ms-office-logo-container {
     background: #B3191C;
 }
 
-.skills-entry:hover #ms-office-logo-container path {
+.skills-entry-language-tools:hover #ms-office-logo-container path {
     fill: white;
 }
 
 /* For Figma logo container background. */
-.skills-entry:hover #figma-logo-container {
+.skills-entry-language-tools:hover #figma-logo-container {
     background: #03011C;
 }
 
-.skills-entry:hover #figma-logo-container path {
+.skills-entry-language-tools:hover #figma-logo-container path {
     fill: white;
 }
 
 /* For Visual Studio Code logo container background. */
-.skills-entry:hover #vs-code-logo-container {
+.skills-entry-language-tools:hover #vs-code-logo-container {
     background: #0078D7;
 }
 
-.skills-entry:hover #vs-code-logo-container path {
+.skills-entry-language-tools:hover #vs-code-logo-container path {
     fill: white;
 }
 
 /* For Eclipse logo container background. */
-.skills-entry:hover #eclipse-logo-container {
+.skills-entry-language-tools:hover #eclipse-logo-container {
     background: #2C2255;
 }
 
-.skills-entry:hover #eclipse-logo-container path {
+.skills-entry-language-tools:hover #eclipse-logo-container path {
     fill: white;
 }
 
 /* For RStudio logo container background. */
-.skills-entry:hover #rstudio-logo-container {
+.skills-entry-language-tools:hover #rstudio-logo-container {
     background: #71A4D4;
 }
 
-.skills-entry:hover #rstudio-logo-container path {
+.skills-entry-language-tools:hover #rstudio-logo-container path {
     fill: white;
 }
 
 /* For Shiny logo container background. */
-.skills-entry:hover #shiny-logo-container {
+.skills-entry-language-tools:hover #shiny-logo-container {
     background: #0189DC;
 }
 
-.skills-entry:hover #shiny-logo-container path {
+.skills-entry-language-tools:hover #shiny-logo-container path {
     fill: white;
 }
 
 /* For GitHub logo (Skills section) container background. */
-.skills-entry:hover #github-logo-container-skills {
+.skills-entry-language-tools:hover #github-logo-container-skills {
     background: #24292E;
 }
 
-.skills-entry:hover #github-logo-container-skills path {
+.skills-entry-language-tools:hover #github-logo-container-skills path {
     fill: white;
 }
 
@@ -625,10 +656,48 @@ body {
 }
 
 /* For entries in Skills subsection 2. */
-#skills-section-languages-logos .skills-entry,
-#skills-section-tools-logos .skills-entry { 
+#skills-section-languages-logos .skills-entry-language-tools,
+#skills-section-tools-logos .skills-entry-language-tools { 
     flex: 0 1 8rem;
     max-width: 12rem;
+}
+
+/* For management skills in Skills subsection 3. */
+#skills-section-management-skills {
+    display: flex;
+    gap: 1rem;
+    margin: 2.25rem auto;
+    justify-content: space-between;
+    width: 90%;
+}
+
+/* For entries in Skills subsection 2. */
+.skills-entry-management {
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    flex: 1;
+    margin: 1.5rem;
+    min-width: 0;
+    -webkit-backdrop-filter: blur(1px);
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.skills-entry-management:hover {
+    background: #58A4B0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.05);
+}
+
+.skills-entry-management .section-subheader-specific,
+.skills-entry-management .section-text-content {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.skills-entry-management:hover .section-subheader-specific,
+.skills-entry-management:hover .section-text-content {
+    color: white;
 }
 
 /* Media Queries: _____________________________________________ */
@@ -652,10 +721,16 @@ body {
     }
 
     /* For entries in Skills subsection 2. */
-    #skills-section-languages-logos .skills-entry,
-    #skills-section-tools-logos .skills-entry { 
+    #skills-section-languages-logos .skills-entry-language-tools,
+    #skills-section-tools-logos .skills-entry-language-tools { 
         flex: 0 1 2rem;
     }
+
+    /* For management skills in Skills subsection 3. */
+    #skills-section-management-skills {
+    display: flex;
+    flex-direction: column;
+}
 }
 
 /* Media query for screens <= 768px. */
@@ -700,8 +775,8 @@ body {
     }
 
     /* For entries in Skills subsection 2. */
-    #skills-section-languages-logos .skills-entry,
-    #skills-section-tools-logos .skills-entry { 
+    #skills-section-languages-logos .skills-entry-language-tools,
+    #skills-section-tools-logos .skills-entry-language-tools { 
         flex: 0 1 4rem;
     }
 

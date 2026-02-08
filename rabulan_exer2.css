@@ -6,20 +6,20 @@
 /* ===================== Table of Contents ==================== */
 /* Font                                                line 25  */
 /* Animations                                          line 35  */
-/* Body                                                line 88  */
-/* Navigation Bar and Footer                           line 96  */
-/* Text, Headers, and Content                          line 173 */
-/*      Home Section                                   line 269 */
-/*      About Section                                  line 297 */
-/*      Skills Section                                 line 366 */
-/*      Projects Section                               line 427 */
-/* Images                                              line 531 */
-/* Subsections                                         line 782 */
-/*      Home Section                                   line 784 */
-/*      About Section                                  line 791 */
-/*      Skills Section                                 line 801 */
-/*      Projects Section                               line 897 */
-/* Media Queries                                       line 933 */
+/* Body                                                line 94  */
+/* Navigation Bar and Footer                           line 102 */
+/* Text, Headers, and Content                          line 189 */
+/*      Home Section                                   line 291 */
+/*      About Section                                  line 321 */
+/*      Skills Section                                 line 390 */
+/*      Projects Section                               line 457 */
+/* Images                                              line 561 */
+/* Subsections                                         line 825 */
+/*      Home Section                                   line 827 */
+/*      About Section                                  line 834 */
+/*      Skills Section                                 line 844 */
+/*      Projects Section                               line 945 */
+/* Media Queries                                       line 981 */
 /* ============================================================ */
 
 /* Font: ______________________________________________________ */
@@ -1107,6 +1107,12 @@ h3 .section-subheader-specific {
     #about-section-content {
         display: flex;
         flex-direction: column;
+    }
+
+    #about-section-content1, 
+    #about-section-content2,
+    #about-section-content3 {
+        transform-origin: center;
     }
 
     /* For entries in Skills subsection 2. */

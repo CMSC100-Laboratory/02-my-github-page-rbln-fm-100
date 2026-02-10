@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<!-- Rabulan, Francis Miguel B. -->
+<!-- CMSC 100 | U-4L -->
+
+<!-- This static web page serves as my portfolio. -->
+
+<html>
+    <head>
+        
+        <!-- For mobile display. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS Stylesheet Link -->
+        <link rel="stylesheet" href="rabulan_exer2.css">
+
+        <!-- Tab Title -->
+        <title>Francis Rabulan's Portfolio</title>
+
+        <!-- Tab Icon (from https://www.clipartmax.com/) -->
+        <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    </head>
+
+    <body>
+
+        <!-- Anchor tag to indicate top of page. -->
+        <a id = "page-top"></a>
+        
+        <!-- -------------------- Navigation Bar -------------------- -->
+        <nav id = "page-navbar">
+
+            <!-- Left section contains the Home tab. -->
+            <div id = "navbar-home-section">
+
+                <!-- Home Tab -->
+                <div class = "navbar-tab" id = "navbar-home-tab">
+                    <a href = "#home-section">Francis R.</a>
+                </div>
+            </div>
+
+            <!-- Right section contains the other tabs.  -->
+            <div id = "navbar-right-section">
+
+                <!-- About Tab -->
+                <div class = "navbar-tab" id = "navbar-about-tab">
+                    <a href = "#about-section">About</a>
+                </div>
+
+                <!-- Skills Tab -->
+                <div class = "navbar-tab" id = "navbar-skills-tab">
+                    <a href = "#skills-section">Skills</a>
+                </div>
+
+                <!-- Projects Tab -->
+                <div class = "navbar-tab" id = "navbar-projects-tab">
+                    <a href = "#projects-section">Projects</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ------------------ Home/Title Section ------------------ -->
+        <section id = "home-section">
+
+            <!-- Subsection 1 (only subsection in Home/Title) contains an overview of the page. -->
+            <div id = "home-subsection1">
+
+                <!-- Section Header -->
+                <h1 class = "section-header" id = "home-section-header">Kumusta!</h1>
+
+                <!-- Section Content -->
+                <div id = "home-section-content">
+
+                    <!-- Brief Description -->
+                    <div class = "section-text-content" id = "home-section-description">
+                        Welcome to the portfolio of
+                        <span class = "bold-text wave-text" id = "home-section-name">
+
+                            <!-- Individual letters place within <span> tags for wave animation. -->
+                            <div class = "wave-word">
+                                <span>F</span><span>r</span><span>a</span><span>n</span><span>c</span><span>i</span><span>s</span>
+                                <span>M</span><span>i</span><span>g</span><span>u</span><span>e</span><span>l</span>
+                                <span>R</span><span>a</span><span>b</span><span>u</span><span>l</span><span>a</span><span>n</span><span class = "non-bold-text">!</span>
+                            </div>
+                        </span>
+                        <br/>
+                        I am a second-year <span class = "bold-text">BS Computer Science student</span> at the <span class = "bold-text">University
+                        of the Philippines Los Baños</span>.
+                    </div>
+
+                    <!-- External Website Logos -->
+                    <div id = "home-section-logos">
+
+                        <!-- Gmail logo (from https://www.svgrepo.com/) prompts user to send email to my personal email account. -->
+                        <a href = "mailto:rabulan.francismiguel@gmail.com">
+
+                            <!-- Container with .svg logo. -->
+                            <div class = "logo-container" id = "gmail-logo-container">
+                                <svg class="logo" id="gmail-logo" height="4rem" width="4rem" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#373F51" d="M30.996 7.824v17.381c0 0 0 0 0 0.001 0 1.129-0.915 2.044-2.044 2.044-0 0-0 0-0.001 0h-4.772v-11.587l-8.179 6.136-8.179-6.136v11.588h-4.772c0 0 0 0-0 0-1.129 0-2.044-0.915-2.044-2.044 0-0 0-0.001 0-0.001v0-17.381c0-0 0-0.001 0-0.001 0-1.694 1.373-3.067 3.067-3.067 0.694 0 1.334 0.231 1.848 0.619l-0.008-0.006 10.088 7.567 10.088-7.567c0.506-0.383 1.146-0.613 1.84-0.613 1.694 0 3.067 1.373 3.067 3.067v0z"></path>
+                                </svg>
+                            </div>
+                        </a>
+
+                        <!-- LinkedIn logo (from https://commons.wikimedia.org/) leads to LinkedIn account when clicked. -->
+                        <a href = "https://www.linkedin.com/in/francis-rabulan/">
+
+                            <!-- Container with .svg logo. -->
+                            <div class = "logo-container" id = "linkedin-logo-container">
+                                <svg class="logo" id="linkedin-logo" height="4rem" width="4rem" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" fill="#373F51"/>
+                                        <path id="linkedin-inner-path" d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFFFFF"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+
+                        <!-- GitHub logo (from https://commons.wikimedia.org/) leads to personal GitHub account when clicked. -->
+                        <a href = "https://github.com/rbln-fm">
+
+                            <!-- Container with .svg logo. -->
+                            <div class = "logo-container" id = "github-logo-container-home">
+                                <svg class="logo" id="github-logo-home" height="4rem" width="4rem" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#373F51"/>
+                                </svg>
+                            </div>
+                        </a>
+
+                        <!-- Resume icon (from https://www.svgrepo.com/) opens resume in browser when clicked. -->
+                        <a href="media/Rabulan_Francis_Miguel-Resume.pdf" target="_blank">
+
+                            <!-- Container with .svg logo. -->
+                            <div class = "logo-container" id = "resume-icon-container">
+                                <svg fill="#373F51" height="4rem" width="4rem" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M808 154H616l-1-7q-4-44-37-74t-78-30-78 30-37 74l-1 7H192q-31 0-53 22t-22 53v616q0 31 22 53.5t53 22.5h616q31 0 53-22.5t22-53.5V230q0-32-22-54t-53-22zm-308-41q18 0 31 13t13 31.5-13 31.5-31 13-31-13-13-31.5 13-31.5 31-13zm31 611H297q-8 0-14-5.5t-6-13.5v-48q0-8 6-13.5t14-5.5h234q8 0 14 5.5t6 13.5v48q0 8-6 13.5t-14 5.5zm172-150H297q-8 0-14-5.5t-6-13.5v-48q0-8 6-14t14-6h406q8 0 14 6t6 14v48q0 8-6 13.5t-14 5.5zm0-150H297q-8 0-14-5.5t-6-14.5v-47q0-8 6-14t14-6h406q8 0 14 6t6 14v47q0 9-6 14.5t-14 5.5z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------------- About Section -------------------- -->
+        <section id = "about-section">
+
+             <!-- Section Content -->
+            <div id = "about-section-content">
+
+                <!-- Subsection 1 (only subsection in About) contains my autobiogaphy and personal photo. -->
+                <div id = "about-subsection1">
+
+                    <!-- Section Header -->
+                    <h1 class = "section-header" id = "about-section-header">About Me</h1>
+
+                    <!-- Autobiography Content 1 -->
+                    <p class = "section-text-content" id = "about-section-content1">
+                        I'm <span class = "bold-text">Filipino</span> and was born and raised in <span class = "bold-text">San Pablo City, Laguna</span>.
+                        I studied under the <span class = "bold-text">STEM</span> strand at <span class = "bold-text">San Pablo City Science 
+                        Integrated High School</span>, and ever since I was little, I've had an interest in <span class = "bold-text">technology, 
+                        geography, video games, sports, and languages</span>. At times, you'll find me <span class = "bold-text">watching football
+                        or hockey, playing Pokémon, or studying French</span>.
+                    </p>
+
+                    <!-- Autobiography Content 2 -->
+                    <p class = "section-text-content" id = "about-section-content2">
+                        I'm currently an <span class = "bold-text">undergraduate student</span> and an <span class = "bold-text"> aspiring front-end 
+                        developer</span> interested in <span class = "bold-text">UI/UX design</span>. I'm very much eager to <span class = "bold-text">
+                        hone my skills</span> with every <span class = "bold-text">learning opportunity</span> I get and <span class = "bold-text">know 
+                        more</span> about the vast field of <span class = "bold-text">computer science</span>!
+                    </p>
+
+                    <!-- Autobiography Content 3 -->
+                    <p class = "section-text-content" id = "about-section-content3">
+                        <span class = "italicized-text">Ako'y sabik na sabik makilala ka!</span>
+                    </p>
+                </div>
+
+                <!-- Personal Photo -->
+                <img id = "personal-photo" src = "media/portrait.jpg" alt = "Photo of Francis Rabulan">
+            </div>
+        </section>
+
+        <!-- -------------------- Skills Section -------------------- -->
+        <section id = "skills-section">
+
+            <!-- Subsection 1 contains an overview of my skills. -->
+            <div id = "skills-subsection1">
+                <h1 class = "section-header" id = "skills-section-header">Skills</h1>
+
+                <!-- Brief Description -->
+                <div id = "skills-section-description">
+                    <p class = "section-text-content" id = "skills-section-content1">
+                        Listed below are the <span class = "bold-text">languages and tools</span> that I am 
+                        <span class = "bold-text">familar with</span>, as well as my <span class = "bold-text">management capabilties</span>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Subsection 2 contains the list of languages, tools, and software that I have used before. -->
+            <div id = "skills-subsection2">
+
+                <!-- This section contains the languages. -->
+                <div id = "skills-section-languages">
+
+                    <!-- Section Subeader -->
+                    <h2 class = "section-subheader" id = "skills-section-subheader1">Languages</h2>
+
+                    <!-- Language Logos -->
+                    <div id = "skills-section-languages-logos">
+
+                        <!-- Container with Python .svg logo (from https://iconscout.com/). -->
+                        <div class = "skills-entry-language-tools" id = "python-entry">
+                            <div class = "logo-container" id = "python-logo-container">
+                                <svg class="logo" id="python-logo" height="4rem" width="4rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M18.231 7.357h.001v-.004z"></path>
+                                    <path fill="#373F51" d="M20.699 17.748c1.666 0 2.282-1.162 2.861-2.904.6-1.794.574-3.52 0-5.818-.413-1.655-1.194-2.904-2.861-2.904h-2.147v2.541c0 1.971-1.672 3.632-3.578 3.632H9.252c-1.565 0-2.861 1.339-2.861 2.909v5.454c0 1.553 1.35 2.464 2.861 2.909 1.81.53 3.552.626 5.721 0 1.441-.418 2.861-1.26 2.861-2.909v-2.181h-5.717v-.728h8.582zm-5.367 2.181c.594 0 1.077.488 1.077 1.088 0 .606-.482 1.093-1.077 1.093a1.09 1.09 0 0 1-1.077-1.093 1.088 1.088 0 0 1 1.077-1.088z"></path>
+                                    <path fill="#373F51" d="M3.444 17.749H5.41v-2.615c0-1.891 1.634-3.558 3.578-3.558h5.721c1.591 0 2.861-1.312 2.861-2.909V3.209c0-1.553-1.307-2.717-2.861-2.978-1.918-.317-4.002-.299-5.721.006l.001-.001c-2.422.428-2.86 1.322-2.86 2.977v2.181h5.727v.729H3.98C2.314 6.123.856 7.125.402 9.027c-.525 2.181-.546 3.541 0 5.818.406 1.693 1.377 2.904 3.042 2.904zM8.63 3.937a1.084 1.084 0 0 1-1.077-1.088A1.089 1.089 0 0 1 8.63 1.756c.59 0 1.077.492 1.077 1.093S9.225 3.937 8.63 3.937z"></path>
+                                </svg>
+                            </div>
+
+                            <!-- Python Label -->
+                            <h3 class = "skills-name" id = "python-name">Python</h3>
+                        </div>
+                        
+                        <!-- Container with C .svg logo (from https://commons.wikimedia.org/). -->
+                        <div class = "skills-entry-language-tools" id = "c-entry">
+                            <div class = "logo-container" id = "c-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="0 0 89.64067 93.591774" xmlns="http://www.w3.org/2000/svg">
+                                    <g inkscape:label="Calque 1" inkscape:groupmode="layer" transform="translate(-115.31123,-96.087413)">
+                                        <path fill="#373F51" d="m 204.33454,132.38818 c -2.34597,-22.84232 -17.53303,-36.300767 -44.69687,-36.300767 -24.81787,0 -44.32644,17.903437 -44.32644,46.672417 0,28.89245 17.77996,46.91936 47.1663,46.91936 23.45968,0 39.88146,-13.82886 42.47437,-36.79466 h -28.02815 c -1.11124,8.51957 -5.55624,15.06359 -14.94011,15.06359 -14.81664,0 -17.53302,-11.72984 -17.53302,-24.20051 0,-17.16261 6.1736,-25.92912 16.42177,-25.92912 9.13693,0 14.94012,5.30929 15.80442,14.56969 z" style="font-weight:900;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std Heavy'"/>
+                                    </g>
+                                </svg>
+
+                            </div>
+
+                            <!-- C Label -->
+                            <h3 class = "skills-name" id = "c-name">C</h3>
+                        </div>
+
+                        <!-- Container with Java .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "java-entry">
+                            <div class = "logo-container" id = "java-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="0 0 502.632 502.632" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#373F51" d="M240.864,269.894c0,0-28.02-53.992-26.985-93.445c0.755-28.193,64.324-56.062,89.281-96.529
+                                        C328.074,39.431,300.054,0,300.054,0s6.234,29.077-10.376,59.147c-16.609,30.113-77.914,47.779-101.749,99.679
+                                        S240.864,269.894,240.864,269.894z"/>
+                                    <path fill="#373F51" d="M345.741,105.869c0,0-95.494,36.347-95.494,77.849c0,41.545,25.928,55.027,30.113,68.509
+                                        c4.142,13.525-7.269,36.347-7.269,36.347s37.361-25.95,31.105-56.062c-6.234-30.113-35.29-39.475-18.659-69.544
+                                        C296.646,142.799,345.741,105.869,345.741,105.869z"/>
+                                    <path fill="#373F51" d="M230.51,324.748c88.246-3.149,120.43-30.997,120.43-30.997
+                                        c-57.076,15.553-208.654,14.539-209.711,3.128c-1.014-11.411,46.701-20.773,46.701-20.773s-74.721,0-80.955,18.68
+                                        C100.74,313.467,142.328,327.833,230.51,324.748z"/>
+                                    <path fill="#373F51" d="M358.187,368.494c0,0,86.369-18.421,77.827-65.338c-10.354-57.119-70.58-24.936-70.58-24.936
+                                        s42.602,0,46.722,25.928C416.32,330.098,358.187,368.494,358.187,368.494z"/>
+                                    <path fill="#373F51" d="M315.628,343.601c0,0-21.765,5.716-54.013,9.34c-43.228,4.853-95.494,1.014-99.657-6.256
+                                        c-4.098-7.269,7.269-11.411,7.269-11.411c-51.921,12.468-23.512,34.233,37.339,38.418c52.158,3.559,129.791-15.574,129.791-15.574
+                                        L315.628,343.601z"/>
+                                    <path fill="#373F51" d="M181.738,388.943c0,0-23.555,0.669-24.936,13.137c-1.359,12.382,14.496,23.512,72.65,26.964
+                                        c58.133,3.451,98.988-15.898,98.988-15.898l-26.295-15.962c0,0-16.631,3.494-42.236,6.946
+                                        c-25.626,3.473-78.173-2.783-80.243-7.593C177.553,391.682,181.738,388.943,181.738,388.943z"/>
+                                    <path fill="#373F51" d="M407.994,445.005c8.995-9.707-2.783-17.321-2.783-17.321s4.142,4.853-1.337,10.376
+                                        c-5.544,5.522-56.084,19.349-137.061,23.512c-80.955,4.163-168.856-7.615-171.639-17.99
+                                        c-2.696-10.376,45.018-18.659,45.018-18.659c-5.522,0.69-71.96,2.071-74.074,20.082c-2.071,17.968,29.056,32.507,153.67,32.507
+                                        C344.339,477.491,399.042,454.647,407.994,445.005z"/>
+                                    <path fill="#373F51" d="M359.568,485.817c-54.682,11.044-220.734,4.077-220.734,4.077s107.919,25.626,231.109,4.185
+                                        c58.888-10.268,62.318-38.763,62.318-38.763S414.25,474.708,359.568,485.817z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Java Label -->
+                            <h3 class = "skills-name" id = "java-name">Java</h3>
+                        </div>
+
+                        <!-- Container with R .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "r-entry">
+                            <div class = "logo-container" id = "r-logo-container">
+                                <svg fill="#373F51" height="4rem" width="4rem" viewBox="2 1.75 28 28" id="icon" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {fill-rule: evenodd;}
+                                            .cls-2 {fill: none;}
+                                        </style>
+                                    </defs>
+                                    <path d="M30,14.7842c0-5.1782-6.2681-9.376-14-9.376S2,9.606,2,14.7842c0,4.6147,4.9814,8.4419,11.5361,9.2226v2.9917l4.7762-.0019,0-2.9741a19.3812,19.3812,0,0,0,3.3418-.6646L23.593,27l5.3975-.0024-3.253-5.4849C28.3625,19.8086,30,17.4263,30,14.7842Zm-22.4983.7c0-3.54,4.7644-6.41,10.6414-6.41s10.2138,1.9629,10.2138,6.41A5.4694,5.4694,0,0,1,24.9587,20.61a3.2252,3.2252,0,0,0-.2978-.1749,10.4735,10.4735,0,0,0-1.34-.5048s4.1743-.31,4.1743-4.4659-4.3684-4.2343-4.3684-4.2343H13.5361V21.2554C9.97,20.22,7.5017,18.0283,7.5017,15.4839Zm13.7422,1.8452-2.8928.001.0014-2.6812,2.8914.0015a1.2476,1.2476,0,0,1,1.34,1.3149A1.3232,1.3232,0,0,1,21.2439,17.3291Zm-2.9326,3.4946h1.2825a.8785.8785,0,0,1,.6406.291,3.2917,3.2917,0,0,1,.51.63,22.4033,22.4033,0,0,1-2.4326.1455Z"/>
+                                    <rect height="4rem" width="4rem" data-name="&lt;Transparent Rectangle&gt;" class="cls-2"/>
+                                </svg>
+                            </div>
+
+                            <!-- R Label -->
+                            <h3 class = "skills-name" id = "r-name">R</h3>
+                        </div>
+
+                        <!-- Container with HTML .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "html-entry">
+                            <div class = "logo-container" id = "html-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="0 0 27.17 27.17" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path fill="#373F51" d="M1.609,0.008c0.013,0.129,0.023,0.248,0.033,0.367c0.103,1.153,0.203,2.307,0.307,3.459 c0.132,1.465,0.265,2.933,0.395,4.397c0.11,1.232,0.219,2.467,0.328,3.7c0.124,1.389,0.249,2.777,0.373,4.167 c0.109,1.231,0.218,2.467,0.328,3.7c0.134,1.502,0.27,3.002,0.398,4.504c0.008,0.097,0.039,0.138,0.135,0.164
+                                            c3.177,0.896,6.352,1.793,9.525,2.687c0.08,0.022,0.176,0.021,0.256,0c3.187-0.894,6.373-1.789,9.56-2.682 c0.109-0.031,0.143-0.078,0.15-0.185c0.068-0.837,0.146-1.673,0.219-2.509c0.082-0.922,0.166-1.846,0.248-2.77 c0.074-0.826,0.146-1.65,0.221-2.477c0.084-0.924,0.166-1.848,0.248-2.771c0.072-0.825,0.146-1.649,0.221-2.476
+                                            c0.082-0.92,0.164-1.84,0.246-2.76c0.074-0.828,0.146-1.656,0.223-2.486c0.082-0.92,0.164-1.84,0.246-2.76 c0.074-0.838,0.148-1.678,0.227-2.517C25.517,0.51,25.538,0.258,25.562,0C17.571,0.008,9.6,0.008,1.609,0.008z M20.831,7.965 c-3.82,0-7.638,0-11.47,0c0.09,1.033,0.179,2.056,0.267,3.082c3.649,0,7.287,0,10.938,0c-0.027,0.217-0.061,0.422-0.08,0.629
+                                            c-0.051,0.521-0.1,1.043-0.146,1.562c-0.084,0.943-0.166,1.892-0.248,2.835c-0.072,0.848-0.145,1.691-0.221,2.539 c-0.047,0.535-0.1,1.07-0.145,1.604c-0.008,0.084-0.062,0.086-0.111,0.101c-1.293,0.356-2.584,0.713-3.877,1.067 c-0.709,0.197-1.417,0.396-2.127,0.591c-0.032,0.01-0.076,0.004-0.11-0.007c-2.006-0.551-4.011-1.104-6.015-1.653
+                                            c-0.092-0.023-0.094-0.08-0.1-0.146c-0.051-0.644-0.102-1.283-0.15-1.927c-0.067-0.864-0.135-1.729-0.203-2.594 c-0.002-0.022-0.002-0.049-0.004-0.08c0.99,0,1.978,0,2.971,0c0.025,0.281,0.052,0.562,0.076,0.838 c0.044,0.49,0.088,0.979,0.13,1.472c0.004,0.056,0.021,0.078,0.075,0.094c1.076,0.287,2.15,0.578,3.228,0.867
+                                            c0.038,0.011,0.084,0.006,0.123-0.004c1.062-0.285,2.123-0.574,3.187-0.856c0.064-0.019,0.092-0.048,0.098-0.113 c0.117-1.254,0.236-2.51,0.357-3.763c0-0.004-0.002-0.009-0.004-0.023c-3.463,0-6.928,0-10.401,0C6.596,11.049,6.326,8.029,6.055,5 c5.025,0,10.028,0,15.057,0C21.021,5.988,20.925,6.971,20.831,7.965z"/>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <!-- HTML Label -->
+                            <h3 class = "skills-name" id = "html-name">HTML</h3>
+                        </div>
+
+                        <!-- Container with CSS .svg logo (from https://commons.wikimedia.org/). -->
+                        <div class = "skills-entry-language-tools" id = "css-entry">
+                            <div class = "logo-container" id = "css-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#373F51" d="M0 0H840A160 160 0 0 1 1000 160V840A160 160 0 0 1 840 1000H160A160 160 0 0 1 0 840V0Z" />
+                                    <path id="css-inner-path" fill="#FFFFFF" d="m358.1,920c-64.23-.06-103.86-36.23-103.1-102.79,0,0,0-168.39,0-168.39,0-33.74,9.88-59.4,29.64-76.96,35.49-34.19,117.83-36.27,152.59.52,21.42,18.89,29.5,57.48,27.58,93.49h-73.72c.56-14.15-.19-35.58-8.51-43.65-10.81-14.63-39.36-12.91-46.91,2.32-4.64,8.26-6.96,20.49-6.96,36.67v146.18c0,30.65,10.65,46.15,31.96,46.49,9.96,0,17.53-3.62,22.68-10.85,7.19-8.58,8.31-27.58,7.73-41.32h73.72c5.04,70.07-36.32,119.16-106.71,118.29Zm234.04,0c-71.17.98-103.01-49.66-101.04-118.29h69.59c-1.93,29.92,8.35,57.17,32.99,55.27,10.99,0,18.73-3.44,23.2-10.33,8.5-12.59,10.09-48.95-2.06-63.02-8.49-13.55-39.03-25.51-55.16-33.57-23.03-11.02-39.61-24.1-49.75-39.26-22.87-33.64-20.75-107.48,11.34-137.4,31.18-36.92,112.61-38.62,143.82-.77,19.25,19.51,27.66,57.9,26.03,93.23h-67.02c.57-14.52-.8-37.95-6.44-46.49-3.95-7.23-11.43-10.85-22.42-10.85-19.59,0-29.38,11.71-29.38,35.12.21,24.86,9.9,35.06,32.48,45.45,29.24,11.36,66.42,30.76,79.9,54.24,40.2,71.54,12.62,180.82-86.09,176.65Zm224.76,0c-71.17.98-103.01-49.66-101.04-118.29h69.59c-1.93,29.92,8.35,57.17,32.99,55.27,10.99,0,18.73-3.44,23.2-10.33,8.5-12.59,10.09-48.95-2.06-63.02-8.49-13.55-39.03-25.51-55.16-33.57-23.03-11.02-39.61-24.1-49.75-39.26-22.87-33.64-20.75-107.48,11.34-137.4,31.18-36.92,112.61-38.62,143.82-.77,19.25,19.51,27.66,57.9,26.03,93.23h-67.02c.57-14.52-.8-37.95-6.44-46.49-3.95-7.23-11.43-10.85-22.42-10.85-19.59,0-29.38,11.71-29.38,35.12.21,24.86,9.9,35.06,32.48,45.45,29.24,11.36,66.42,30.76,79.9,54.24,40.2,71.54,12.62,180.82-86.09,176.65Z" />
+                                </svg>
+                            </div>
+
+                            <!-- CSS Label -->
+                            <h3 class = "skills-name" id = "css-name">CSS</h3>
+                        </div>
+
+                        <!-- Container with JavaScript .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "javascript-entry">
+                            <div class = "logo-container" id = "javascript-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+                                    <path fill="#373F51" d="M0 0h256v256H0V0z"/>
+                                    <path id="javascript-inner-path" d="M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574" fill="#FFFFFF"/>
+                                </svg>
+                            </div>
+
+                            <!-- JavaScript Label -->
+                            <h3 class = "skills-name" id = "javascript-name">JavaScript</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This section contains the tools and software. -->
+                <div id = "skills-section-tools">
+
+                    <!-- Section Subeader -->
+                    <h2 class = "section-subheader" id = "skills-section-subheader2">Tools</h2>
+
+                    <!-- Tools and Software Logos -->
+                    <div id = "skills-section-tools-logos">
+
+                        <!-- Container with Google Workspace .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "workspace-entry">
+                            <div class = "logo-container" id = "workspace-logo-container">
+                                <svg width="4rem" height="4rem" viewBox="-1 -1 22 22" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="#373F51" transform="translate(-300.000000, -7399.000000)">
+                                        <g transform="translate(56, 160)">
+                                            <path d="M263.821537,7247.00386 L254.211298,7247.00386 C254.211298,7248.0033 254.211298,7250.00218 254.205172,7251.00161 L259.774046,7251.00161 C259.560644,7252.00105 258.804036,7253.40026 257.734984,7254.10487 C257.733963,7254.10387 257.732942,7254.11086 257.7309,7254.10986 C256.309581,7255.04834 254.43389,7255.26122 253.041161,7254.98137 C250.85813,7254.54762 249.130492,7252.96451 248.429023,7250.95364 C248.433107,7250.95064 248.43617,7250.92266 248.439233,7250.92066 C248.000176,7249.67336 248.000176,7248.0033 248.439233,7247.00386 L248.438212,7247.00386 C249.003881,7245.1669 250.783592,7243.49084 252.969687,7243.0321 C254.727956,7242.65931 256.71188,7243.06308 258.170978,7244.42831 C258.36498,7244.23842 260.856372,7241.80579 261.043226,7241.6079 C256.0584,7237.09344 248.076756,7238.68155 245.090149,7244.51127 L245.089128,7244.51127 C245.089128,7244.51127 245.090149,7244.51127 245.084023,7244.52226 L245.084023,7244.52226 C243.606545,7247.38565 243.667809,7250.75975 245.094233,7253.48622 C245.090149,7253.48921 245.087086,7253.49121 245.084023,7253.49421 C246.376687,7256.0028 248.729215,7257.92672 251.563684,7258.6593 C254.574796,7259.44886 258.406843,7258.90916 260.973794,7256.58747 C260.974815,7256.58847 260.975836,7256.58947 260.976857,7256.59047 C263.15172,7254.63157 264.505648,7251.29445 263.821537,7247.00386">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <!-- Google Workspace Label -->
+                            <h3 class = "skills-name" id = "workspace-name">Workspace</h3>
+                        </div>
+
+                        <!-- Container with Microsoft Office .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "ms-office-entry">
+                            <div class = "logo-container" id = "ms-office-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#373F51" d="m 5.26225,11.856771 c -1.758,-0.6324 -3.1876,-1.151 -3.1769,-1.1523 0.011,0 1.449,0.17 3.1962,0.3807 1.7473,0.2108 3.1804,0.3799 3.1846,0.376 0,0 0.01,-1.9184997 0.01,-4.2544997 l 0,-4.2473 -0.031,0 c -0.026,0 -4.1275,0.9564 -4.1789,0.9715 -0.017,0 -0.018,0.1515 -0.018,2.8869 l -2e-4,2.8815 -1.1169,0.4880997 -1.1168,0.4881 0,-3.6496997 0,-3.6498 3.2284,-1.1928 c 2.9508,-1.0903 3.2312,-1.19199997 3.2614,-1.1826 0.018,0.01 0.809,0.2584 1.7573,0.5618 l 1.7242,0.5515 0,4.9152 0,4.9151997 -1.7447,0.5262 c -0.9596,0.2895 -1.7517,0.5278 -1.7601,0.5295 -0.01,0 -1.4537,-0.5141 -3.2116,-1.1465 z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Microsoft Office Label -->
+                            <h3 class = "skills-name" id = "ms-office-code-name">MS Office</h3>
+                        </div>
+
+                        <!-- Container with Figma .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "figma-entry">
+                            <div class = "logo-container" id = "figma-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.66699 9.41667C7.24021 9.41667 6.08366 10.5731 6.08366 11.9998C6.08366 13.4266 7.24026 14.5832 8.66699 14.5832H11.2503V12.0519C11.2501 12.0346 11.25 12.0172 11.25 11.9998C11.25 11.9825 11.2501 11.9651 11.2503 11.9478V9.41667H8.66699ZM11.2503 7.91667H8.66699C7.24026 7.91667 6.08366 6.76007 6.08366 5.33333C6.08366 3.9066 7.24026 2.75 8.66699 2.75H11.2503V7.91667ZM12.7503 2.75V7.91663L15.333 7.9165C16.7597 7.9165 17.9167 6.76002 17.9167 5.33333C17.9167 3.9066 16.7601 2.75 15.3333 2.75H12.7503ZM15.3331 9.4165C13.9203 9.41664 12.7724 10.5509 12.7503 11.9584V12.0412C12.7724 13.4489 13.9204 14.5832 15.3333 14.5832C16.7601 14.5832 17.9167 13.4266 17.9167 11.9998C17.9167 10.5731 16.7598 9.41652 15.3331 9.4165ZM8.66699 16.0832C7.2403 16.0832 6.0835 17.24 6.0835 18.6668C6.0835 20.0936 7.24009 21.2502 8.66683 21.2502C10.0936 21.2502 11.2502 20.0936 11.2502 18.6668L11.2503 16.0832H8.66699Z" fill="#373F51"/>
+                                </svg>
+                            </div>
+
+                            <!-- Figma Label -->
+                            <h3 class = "skills-name" id = "figma-name">Figma</h3>
+                        </div>
+
+                        <!-- Container with Visual Studio Code .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "vs-code-entry">
+                            <div class = "logo-container" id = "vs-code-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#373F51" d="M30.865 3.448l-6.583-3.167c-0.766-0.37-1.677-0.214-2.276 0.385l-12.609 11.505-5.495-4.167c-0.51-0.391-1.229-0.359-1.703 0.073l-1.76 1.604c-0.583 0.526-0.583 1.443-0.005 1.969l4.766 4.349-4.766 4.349c-0.578 0.526-0.578 1.443 0.005 1.969l1.76 1.604c0.479 0.432 1.193 0.464 1.703 0.073l5.495-4.172 12.615 11.51c0.594 0.599 1.505 0.755 2.271 0.385l6.589-3.172c0.693-0.333 1.13-1.031 1.13-1.802v-21.495c0-0.766-0.443-1.469-1.135-1.802zM24.005 23.266l-9.573-7.266 9.573-7.266z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Visual Studio Code Label -->
+                            <h3 class = "skills-name" id = "vs-code-name">VS Code</h3>
+                        </div>
+
+                        <!-- Container with Eclipse .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "eclipse-entry">
+                            <div class = "logo-container" id = "eclipse-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="4 4 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#373F51" d="M6.568 16.58c-0.143-5.283 3.811-9.945 8.951-10.787-4.040 0.066-7.256 1.719-9.282 5.253-2.139 3.729-1.992 7.535 0.393 11.112 2.097 3.144 5.174 4.596 8.931 4.621-5.289-0.905-8.865-5.454-8.993-10.198zM7.627 13.092c-0.11 0.292-0.096 0.297 0.222 0.297 6.225 0 12.451 0 18.676 0 0.113 0 0.226 0 0.337 0 0.003-0.030 0.010-0.047 0.006-0.062-0.019-0.071-0.040-0.142-0.063-0.212-0.756-2.252-2.175-3.997-4.134-5.3-2.223-1.479-4.697-1.903-7.285-1.418-3.856 0.722-6.385 3.059-7.759 6.695zM7.437 14.524c-0.13-0.020-0.165 0.044-0.181 0.161-0.039 0.293-0.073 0.586-0.093 0.882-0.008 0.121 0.015 0.155 0.138 0.154 1.028-0.007 2.055-0.008 3.083-0.011 0.057 0.003 0.115 0.008 0.172 0.008 4.443 0 8.886 0 13.329 0 0.057 0 0.115-0.005 0.172-0.008 1.019 0.003 2.039 0.002 3.058 0.012 0.148 0.001 0.162-0.062 0.15-0.174-0.030-0.269-0.076-0.538-0.086-0.808-0.007-0.19-0.081-0.219-0.255-0.219-6.439 0.005-12.877 0.004-19.316 0.004-0.058 0-0.116 0.007-0.173-0.001zM27.117 16.851c-1.020 0.006-2.039 0.008-3.059 0.010-0.057-0.003-0.115-0.008-0.172-0.008-4.443-0-8.887-0-13.33 0-0.057 0-0.115 0.005-0.172 0.008-1.026-0.003-2.052-0.004-3.078-0.010-0.114-0.001-0.153 0.019-0.143 0.148 0.022 0.303 0.051 0.604 0.098 0.905 0.014 0.090 0.030 0.145 0.145 0.145 1.059-0.008 2.117-0.010 3.176-0.014 0.065 0.004 0.131 0.011 0.196 0.011 4.296 0 8.591 0 12.887 0 0.065 0 0.131-0.007 0.196-0.011 1.052 0.004 2.105 0.007 3.157 0.012 0.083 0 0.14-0.013 0.149-0.116 0.029-0.311 0.063-0.621 0.1-0.931 0.015-0.123-0.036-0.15-0.15-0.149zM10.484 17.593c-0.001-0.002-0.001-0.004-0.002-0.006 0.001 0.001 0.002 0.002 0.003 0.002-0 0.001-0.001 0.002-0.001 0.004zM26.644 19.183c-6.282-0.005-12.564-0.005-18.846-0.003-0.075 0-0.164-0.044-0.225 0.041v0c-0.019 0.104 0.037 0.192 0.067 0.284 1.333 3.989 5.716 7.889 11.823 6.6 2.469-0.521 4.376-1.925 5.892-3.897 0.665-0.866 1.175-1.818 1.474-2.874 0.114-0.261-0.111-0.151-0.185-0.151z"></path>
+                                </svg>
+                            </div>
+
+                            <!-- Eclipe Label -->
+                            <h3 class = "skills-name" id = "eclipse-name">Eclipse</h3>
+                        </div>
+
+                        <!-- Container with RStudio .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "rstudio-entry">
+                            <div class = "logo-container" id = "rstudio-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#373F51" d="M12.178.002a12.002 12.002 0 0 0-8.662 3.515 12.002 12.002 0 0 0 0 16.97 12.002 12.002 0 0 0 16.97 0 12.002 12.002 0 0 0 0-16.97A12.002 12.002 0 0 0 12.179.002zM7.77 5.995c.562.128 1.05.217 1.663.217.921 0 1.863-.217 2.786-.217 1.79 0 3.45.814 3.45 2.8 0 1.54-.921 2.517-2.35 2.93l2.788 4.107h1.301v1.01h-1.986l-3.293-4.934h-1.757v3.924h1.718v1.01H7.77v-1.01h1.483V7.134L7.77 6.951v-.957zm4.466 1.012c-.596 0-1.213.053-1.864.127v3.798l.941.02c2.298.034 3.183-.85 3.183-2.026 0-1.376-.997-1.919-2.26-1.919z"/>
+                                </svg>
+                            </div>
+
+                            <!-- RStudio Label -->
+                            <h3 class = "skills-name" id = "rstudio-name">RStudio</h3>
+                        </div>
+
+                        <!-- Container with Shiny .svg logo (from https://commons.wikimedia.org/). -->
+                        <div class = "skills-entry-language-tools" id = "shiny-entry">
+                            <div class = "logo-container" id = "shiny-logo-container">
+                                <svg height="4rem" width="4rem" viewBox="140 360 2200 2200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#373F51" d="M423.8,1568L423.8,1568C412.5,1567.7,420,1568,423.8,1568z M423.5,1568c-11-0.3-6.2,0-2.4,0h5.8h-0.3H423.5 C425.9,1568,426.9,1568.4,423.5,1568z M707.9,1400.6c23.6-91.5-87.4-213.4-96.6-225c-0.1-0.1-0.2-0.2-0.3-0.4 c-133.2-136.3-64.7-272.4,28.3-257.4c66.9,11,32.3,109.1,68.3,118.7h0.7c21.6,2.1,63.8-49.8,70-67.3 c24-67.9-114.6-109.5-156.8-106.7c-84.7,5.1-140.3,51.1-174.3,127c-62.4,139.6,54.2,232.6,124.9,328.4 c53.5,72.4,51.1,136.9-14.4,199c-72,68.3-145.2-28.5-154.8-94.7c-8.6-60.7-18.5-100.2-69.3-23c-47,71.7,18.5,159.7,77.7,169
+                                        C425.3,1569.2,645.7,1617.5,707.9,1400.6z M1628.4,1784.5c-325.2,29.5-803.9,73.4-904.7,425.5c-0.7,2.1-2.4,3.1-4.5,2.4 c-1-0.3-1.7-0.7-2.1-1.7C618.3,2041.9,406,1918,209,1923.9c-2.1,0.3-3.8-0.7-4.1-2.7s0.7-3.8,2.7-4.1 c507.1-251.8,1025.1-131.1,1572.7-228.9c229.5-60.1,372.1-167.2,449.6-349.4c12.9-22.2,12.2-56.5-23.5-32.1 c-55.2,37.4-106.1,91.6-166.1,120.8c-2.7,1.4-5.8,2.7-8.9,3.8c-1,0.3-1.7,1.4-2.1,2.4c-173.9,396.8-657.8,69.7-89.9-13 c1.4-0.3,2.4-1.4,2.4-2.4l32-104c0.7-2.1-0.7-3.8-2.4-4.5c-1.4-0.3-3.1,0.3-3.8,1.4c-13,19.2-27.4,37.4-42.9,54.6
+                                        c-20.2,21.3-36,34.3-48,39.1c-13.7,5.1-28.1,8.2-42.5,8.9c-17.2,1-31.9-5.8-43.2-20.2c-11.3-14.4-17.5-35.7-18.9-63.8 c-0.3-4.5-0.3-9.6,0-15.1c0.3-2.1-0.7-3.8-2.4-4.5c-2.1-0.3-3.8,0.7-4.5,2.4c-5.5,10.6-11,20.6-16.5,29.5 c-16.1,28.1-36.4,53.9-59.4,76.9c-22.6,22.6-44.6,34.7-64.8,36c-38.1,2.4-58.7-19.2-61.4-64.5c-2.7-43.2,14.4-132.1,51.5-264.5 c2.1-5.8,2.7-12,2.4-17.8c-0.7-12-7.5-16.8-21.6-15.8c-16.1,1.4-31.6,7.9-44.3,18.5c-15.8,13.4-28.8,29.9-38.1,48.4 c-11.3,20.6-21.3,41.9-30.5,63.5c-9.6,23.7-17.5,48.4-23.7,73.4c-6.9,27.8-12.7,51.1-16.5,69.3c-4.1,18.9-7.9,38.8-11.7,59.4
+                                        c-2.7,14.4-5.8,32.3-6.5,35l-0.7,2.7c0,0-93.5,6.5-94.3,6.2c-2-16.8,16.7-80.9,18.7-90.6c-17.1,29.9-23.8,39.4-37.6,57.7 c-8.9,11.3-18.6,22.1-28.8,32.3c-22.6,22.6-44.6,34.7-64.8,36c-1.4,0-2.7,0-4.1,0c-33.3,0-52.1-26.1-55.2-77.5 c-0.7-10.3-1-20.6-0.7-31.2c0.3-2.1-0.7-3.8-2.4-4.5c-2.1-0.3-3.8,0.7-4.5,2.4c-51.8,95-98.5,143.1-141.7,145.8 c-38.1,2.4-58.7-20.2-61.8-67.6c-3.4-52.5,11-129.4,42.9-228.2c6.9-24.4,9.9-41.2,9.3-50.1c-1-13.7-7.2-15.4-12.4-15.4h-1.4 c-4.5,0.3-14.1,3.1-34.3,15.8c-17.8,11.7-33.3,26.1-46,42.9c-14.8,19.2-26.4,40.8-35,63.5c-8.9,24-16.1,44.9-21.3,62.4
+                                        s-10.3,39.1-15.4,63.8s-9.6,46-13.7,61.8c-4.1,15.8-8.2,34-12.4,54.9l-0.7,2.7l-90.6,5.8c-2.1,0-3.8-1.4-3.8-3.4 c0-0.3,0-0.7,0-1.4l0,0c13.4-46.3,32.3-121.5,56.3-223c24-101.6,46-182.9,63.8-241.2c15.4-50.8,33.6-100.9,54.9-149.3 c16.5-37.7,38.8-73.1,65.9-104.3c25.7-28.8,54.6-44.3,85.1-46.3c32.3-2.1,49.4,14.1,51.8,47.4c1.4,22.3-5.1,52.2-19.2,89.6 c-25.7,66.2-68.6,143.4-128,229.5c-1.4,1.4-1.4,3.8,0,5.1s3.8,1.4,5.1,0c10.3-7.9,21.3-15.1,32.9-20.9c17.2-8.9,36-14.1,55.6-15.8 c36.7-2.4,56.3,14.4,58.7,49.8c1,13-0.3,26.1-4.1,38.4c-3.4,11.3-7.2,24.7-11.7,39.5c-4.1,14.8-7.5,27.1-10.3,36.4
+                                        c-2.7,9.6-6.2,22.3-10.6,38.4c-4.5,16.1-7.9,30.2-9.9,41.2c-6.2,27.8-8.6,50.1-7.5,66.2c1.4,20.6,9.6,20.6,12.4,20.6h1 c34.7-2.1,75.5-62.4,121.8-179.1c0.3-0.7,0.3-1,0.7-1.7c10.6-38.4,24-76.2,40.1-112.5c19.2-42.2,42.5-64.5,70-66.2l54.9-2.7 c2.1,0,3.8,1.4,3.8,3.4c0,1-0.3,2.1-1,2.7l0,0c-8.6,8.2-19.9,30.2-33.6,65.5c-14.4,38.1-24.4,64.2-30.9,81.7 c-6.5,18.2-14.1,42.9-22,73.8s-11.3,55.6-9.9,74.1c1.7,24.4,11,24.4,14.1,24.4h1c4.8-0.3,13.7-3.8,29.8-18.5 c12.4-11.3,23-24,31.9-38.1c8.2-13.4,17.2-30.2,27.1-50.8c9.9-20.6,18.5-38.4,25.7-53.5c7.9-16.1,11-21.6,13-23.7l4.5-8.2
+                                        c16.8-67.9,24.7-115.6,23-142.1c0-4.5-1-8.9-3.1-13l0,0c-1-1.4-1-3.8,0.7-4.8c0.7-0.3,1.4-0.7,2.1-0.7l38.1-2.4 c22.3-1.4,36.4,0,43.6,4.8s11.7,12.7,12,20.9c0,8.2-0.7,16.8-2.4,25c-0.3,2.1,1,3.8,3.1,4.1c1,0.3,2.4-0.3,3.1-1 c42.9-44.6,87.5-68.6,133.5-71.4c36.7-2.4,56.6,15.1,58.7,51.8c0.7,11.7,0,23.3-2.4,35s-8.2,34.3-18.5,69.3 c-21.6,75.1-31.9,125.6-30.2,150.3c1,17.5,7.9,19.6,13,19.6h1c4.8-0.3,13.7-3.8,29.5-18.9c12.4-11.7,23-24.7,32.3-38.8 c9.9-16.1,19.2-32.9,27.4-50.1c9.9-19.9,18.2-37.7,25.4-52.8c2.4-5.5,4.5-9.6,6.2-13c0-0.3,0.3-0.3,0.3-0.7
+                                        c9.9-41.9,21.6-76.5,35-103.3c15.4-31.6,32.9-52.5,51.5-62.8c18.5-10.3,43.9-16.1,76.5-18.2l0,0c4.1-0.3,7.5,2.7,7.9,6.5 c0,0.3,0,0.3,0,0.7c0.3,3.8-1.7,7.9-5.8,13c-23,25-45.3,69.3-66.9,131.8c-21.6,62.4-30.9,114.9-28.5,156.8 c1.4,19.2,6.2,29.2,14.4,29.2h0.7c20.2-1.4,46-26.4,75.8-74.8c29.2-46,52.1-95.4,68.6-147.2c2.1-6.9,4.8-16.5,8.6-29.5 c3.8-13,6.5-21.6,7.9-26.4s4.1-11.7,7.5-20.2c2.3-6.7,5.7-12.8,9.7-18.5c0.2-0.3,0.4-0.5,0.6-0.8c2.7-3,6.7-7,11.3-12 c4.8-5.1,10.3-8.9,16.8-11c16.1-4.8,32.6-7.9,49.4-9.3l38.1-2.4c1.7-0.7,3.8,0.3,4.5,2.1c0.7,1.7-0.3,3.8-2.1,4.5l-0.7,0.7
+                                        c-17.2,13.4-34,45.3-49.7,95c-13,42.2-24,81.3-32.6,116s-14.1,55.9-16.1,63.5c-2.1,7.5-6.5,26.1-13.4,54.2 c-5.1,21.3-9.6,38.8-13.4,52.8c-0.7,1.7,0,3.8,1.7,4.5c1,0.3,2.4,0.3,3.4-0.7c37.4-22.3,71.7-49.1,102.9-79.6 c17.5-17.5,156.4-164.1,156.4-71.4C2302.3,1577,1953.6,1755,1628.4,1784.5z M1041.4,812.5c-13.4,0.7-37.1,21.3-72.7,113.2 C944,989.2,920,1061.6,897,1141.2c-0.7,2.1,0.7,3.8,2.4,4.5c1.4,0.3,3.1,0,4.1-1.4c61.8-94.4,104.6-172.9,127.3-234.3 c14.1-41.9,20.6-69.7,19.9-82c-1-15.1-6.9-15.1-8.6-15.1L1041.4,812.5z M1927.1,1470c-14.3,2.7-190.1,48-172.3,86.9
+                                        C1775.1,1601,1893.7,1544.8,1927.1,1470z M1318.9,1017.7L1318.9,1017.7c22-1,49.4-9.3,55.9-41.9c3.1-14.8-5.8-31.6-11.3-36.4 c-5.5-4.8-13-6.9-23-6.2s-22,6.9-33.3,17.5c-15.1,14.1-14.4,34.3-9.6,47.7C1302.1,1009.8,1310,1017.3,1318.9,1017.7z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Shiny Label -->
+                            <h3 class = "skills-name" id = "shiny-name">Shiny</h3>
+                        </div>
+
+                        <!-- Container with GitHub .svg logo (from https://www.svgrepo.com/). -->
+                        <div class = "skills-entry-language-tools" id = "github-entry">
+                            <div class = "logo-container" id = "github-logo-container-skills">
+                                <svg class="logo" id="github-logo-skills" height="4rem" width="4rem" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#373F51"/>
+                                </svg>
+                            </div>
+
+                            <!-- GitHub Label -->
+                            <h3 class = "skills-name" id = "github-name">GitHub</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subsection 3 contains the list of my management skills. -->
+            <div id = "skills-subsection3">
+
+                <!-- Section Subheader -->
+                <h1 class = "section-subheader" id = "skills-section-subheader3">Management</h1>
+
+                <!-- Container with adaptability entry. -->
+                <div id = "skills-section-management-skills">
+                    <div class = "skills-entry-management" id = "adaptability-entry">
+
+                        <!-- Adaptability Header/Label -->
+                        <h3 class = "section-subheader-specific">Adaptability</h3>
+
+                        <p class = "section-text-content" id = "skills-section-content2">
+                            <span class = "bold-text">Change is constant</span>, and one must be able to <span class = "bold-text">go with the flow</span>
+                            to keep things running and working despite potential setbacks. I try to, in the words of Bear Grylls, <span class = "bold-text">
+                            improvise, adapt, and overcome</span>.
+                        </p>
+                    </div>
+
+                    <!-- Container with communication entry. -->
+                    <div class = "skills-entry-management" id = "communication-entry">
+                        <h3 class = "section-subheader-specific">Communication</h3>
+
+                        <!-- Communication Header/Label -->
+                        <p class = "section-text-content" id = "skills-section-content3">
+                            As a member of <span class = "bold-text">two student organizations</span> — one academic and one socio-civic — I value open and 
+                            constant communication as <span class = "bold-text">momentum and dynamics</span> stem from interactive environments.
+                        </p>
+                    </div>
+
+                    <!-- Container with organization entry. -->
+                    <div class = "skills-entry-management" id = "organization-entry">
+                        <h3 class = "section-subheader-specific">Organization</h3>
+
+                        <!-- Organization Header/Label -->
+                        <p class = "section-text-content" id = "skills-section-content4">
+                            Whether it's a group of tasks or time that needs to be juggled, I <span class = "bold-text">set things straight and prioritize 
+                            the correct things</span> as these are fundamental in accomplishing feats and reaching objectives.
+                        </p> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "projects-section">
+
+            <!-- ------------------- Projects Section ------------------- -->
+            <div id = "projects-section-content">
+
+                <!-- Subsection 1 contains the header and description. -->
+                <div id = "projects-subsection1">
+
+                    <!-- Section Header -->
+                    <h1 class = "section-header" id = "projects-section-header">Projects</h1>
+
+                    <!-- Brief Description -->
+                    <p class = "section-text-content" id = "projects-section-description">
+                        A list of my recent <span class = "bold-text">in-progress and past projects</span>. Feel free to check them out!
+                    </p>
+                </div>
+
+                <!-- Subsection 2 contains the entry for my NHL standings project. -->
+                <div id = "projects-subsection2">
+
+                    <!-- Project Screencapture -->
+                    <img class = "projects-entry-photo" src = "media/nhl-standings-photo.png" alt = "NHL Standings screen capture">
+
+                    <!-- NHL Standings Viewer Header/Label -->
+                    <div class = "projects-entry" id = "nhl-standings-entry">
+                        <h2 class = "section-subheader" id = "projects-section-subheader1">NHL Standings Viewer</h2>
+                        
+                        <p class = "section-text-content" id = "projects-section-content1">
+                            Being a big hockey fan, I made a design-centric <span class = "bold-text">Python and Flask-based program</span> that shows the 
+                            <span class = "bold-text">current standings</span> of the ongoing <span class = "bold-text">National Hockey League </span> 
+                            season with the help of the <a href = "https://github.com/coreyjs/nhl-api-py" class = "bold-text hyperlink">NHL-api-py 
+                            package</a>. Aside from <span class = "bold-text">league-wide standings</span>, users can sort also by <span class = "bold-text">
+                            divison and conference</span>.<span class = "italicized-text"> Go! Habs Go!</span>
+                        </p>
+
+                        <!-- GitHub logo (from https://commons.wikimedia.org/) opens repository to said project when clicked. -->
+                        <a href = "https://github.com/rbln-fm/NHL-Standings-Viewer">
+                            <div class = "logo-container projects-logo" id = "github-logo-container-projects1">
+                                <svg class="logo" id="github-logo-projects1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#373F51"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <hr class = "line-divider"/>
+
+                <!-- Subsection 3 contains the entry for my Shared Space project. -->
+                <div id = "projects-subsection3">
+
+                    <!-- Project Screencapture -->
+                    <img class = "projects-entry-photo" src = "media/shared-space-photo.png" alt = "Shared Space screen capture">
+
+                    <!-- Shared Space Header/Label -->
+                    <div class = "projects-entry" id = "shared-space-entry">
+                        <h2 class = "section-subheader" id = "projects-section-subheader2">Shared Space</h2>
+        
+                        <p class = "section-text-content" id = "projects-section-content2">
+                            An <span class = "bold-text">art-sharing platform</span> built with the <span class = "bold-text">MERN stack</span> that 
+                            incorporates <span class = "bold-text">gamified mechanics</span> such as streaks. This was made during my time as a <span class = "bold-text">
+                            Junior Projects and Activities Department member</span> at the <a href = "https://www.yses.org/updates" class = "bold-text hyperlink">Young 
+                            Software Engineers' Society</a>, and I was part of the <span class = "bold-text">front-end team</span>.
+                        </p>
+
+                        <!-- GitHub logo (from https://commons.wikimedia.org/) opens repository to said project when clicked. -->
+                        <a href = "https://github.com/sh1roee/SharedSpace">
+                            <div class = "logo-container projects-logo" id = "github-logo-container-projects2">
+                                <svg class="logo" id="github-logo-projects2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#373F51"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <hr class = "line-divider"/>
+
+                <!-- Subsection 4 contains the entry for my Teragarden project. -->
+                <div id = "projects-subsection4">
+
+                    <!-- Project Screencapture -->
+                    <img class = "projects-entry-photo" src = "media/teragarden-photo.png" alt = "Teragarden screen capture">
+
+                    <!-- Teragarden Header/Label -->
+                    <div class = "projects-entry" id = "teragarden-entry">
+                        <h2 class = "section-subheader" id = "projects-section-subheader3">Teragarden</h2>
+                        
+                        <p class = "section-text-content" id = "projects-section-content3">
+                            <span class = "italicized-text">Ribbit, ribbit!</span> As part of our <span class = "bold-text">object-oriented programming</span> 
+                            course, my group made a <span class = "bold-text"> pixel-themed game inventory manager</span> with a <span class = "bold-text">
+                            clicker minigame</span> with the use of <span class = "bold-text">Java and JavaFX</span>. OOP concepts such as <span class = "bold-text">
+                            persistence</span> for account states were implemented.
+                        </p>
+
+                        <!-- Google Drive logo (from https://www.svgrepo.com/) opens folder to said project when clicked. -->
+                        <a href = "https://drive.google.com/file/d/1zYRslvPJlhmOtC5hvov8OiQOhGy4AUMw/view?usp=sharing">
+                            <div class = "logo-container projects-logo" id = "gdrive-logo-container1">
+                                <svg class="logo" id="gdrive-logo-projects1" height="4rem" width="4rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#373F51" d="M8.175 13l-3.324 6h11.824L20 13H8.175zM5.865 2.299L0 12.914l3.372 6.084L9.238 8.383 5.865 2.299zM19.445 12L13.349 1H6.604l6.088 11h6.753z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <hr class = "line-divider"/>
+
+                <!-- Subsection 5 contains the entry for my Greenvale calculator project. -->
+                <div id = "projects-subsection5">
+
+                    <!-- Project Screencapture -->
+                    <img class = "projects-entry-photo" src = "media/greenvale-photo.png" alt = "Greenvale screen capture">
+
+                    <!-- Greenvale Project Optimizer Header/Label -->
+                    <div class = "projects-entry" id = "greenvale-entry">
+                        <h2 class = "section-subheader" id = "projects-section-subheader4">Greenvale Project Optimizer</h2>
+                        
+                        <p class = "section-text-content" id = "projects-section-content4">
+                            For my <span class = "bold-text">numerical and symbolic computation</span> class, I made this web tool with <span class = "bold-text">
+                            R and Shiny</span> that finds the <span class = "bold-text">optimal number of units</span> of pollutant-reducing projects when 
+                            <span class = "bold-text">considering overall cost</span>. It utilizes the <span class = "bold-text">Simplex Method</span> for
+                            calculations and <span class = "bold-text">displays each iteration</span> for reference.
+                        </p>
+
+                        <!-- Google Drive logo (from https://www.svgrepo.com/) opens folder to said project when clicked. -->
+                        <a href = "https://drive.google.com/file/d/1mpu7V3U1pWqJJ8glhoDm8xUSZv5fU2pX/view?usp=sharing">
+                            <div class = "logo-container projects-logo" id = "gdrive-logo-container2">
+                                <svg class="logo" id="gdrive-logo-projects2" height="4rem" width="4rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#373F51" d="M8.175 13l-3.324 6h11.824L20 13H8.175zM5.865 2.299L0 12.914l3.372 6.084L9.238 8.383 5.865 2.299zM19.445 12L13.349 1H6.604l6.088 11h6.753z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <!-- ------------------------ Footer ------------------------ -->
+    <footer id = "page-footer">
+
+        <!-- Arrow icon (from https://www.svgrepo.com/) sends user to top of page. -->
+        <a href = "#page-top">
+            <div class = "logo-container" id = "footer-icon">
+                <svg viewBox="0 0 512.002 512.002" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#373F51" d="M509.501,249.969L262.034,2.502c-3.337-3.336-8.73-3.336-12.066,0L2.501,249.969c-1.604,1.596-2.5,3.772-2.5,6.033
+                        v247.467c0,3.447,2.082,6.562,5.265,7.885c3.191,1.314,6.852,0.589,9.301-1.852l241.434-241.434l241.434,241.434
+                        c1.63,1.63,3.814,2.5,6.033,2.5c1.101,0,2.21-0.213,3.268-0.648c3.191-1.323,5.265-4.437,5.265-7.885V256.002
+                        C512.001,253.741,511.105,251.565,509.501,249.969z"/>
+                </svg>
+            </div>
+        </a>    
+    
+        <!-- Address Text -->
+        <address>
+            © 2026 Francis Miguel Rabulan | All Rights Reserved
+        </address>
+    </footer>
+</html>

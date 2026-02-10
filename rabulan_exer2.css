@@ -1,0 +1,1129 @@
+/* Rabulan, Francis Miguel B. */
+/* CMSC 100 | U-4L */
+
+/* This CSS file styles my static web page portfolio. */
+
+/* ===================== Table of Contents ==================== */
+/* Font                                                line 25  */
+/* Animations                                          line 35  */
+/* Body                                                line 94  */
+/* Navigation Bar and Footer                           line 102 */
+/* Text, Headers, and Content                          line 189 */
+/*      Home Section                                   line 291 */
+/*      About Section                                  line 321 */
+/*      Skills Section                                 line 390 */
+/*      Projects Section                               line 457 */
+/* Images                                              line 561 */
+/* Subsections                                         line 825 */
+/*      Home Section                                   line 827 */
+/*      About Section                                  line 834 */
+/*      Skills Section                                 line 844 */
+/*      Projects Section                               line 945 */
+/* Media Queries                                       line 981 */
+/* ============================================================ */
+
+/* Font: ______________________________________________________ */
+
+/* Import Inter from Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Assign Inter as universal font. */
+* {
+    font-family: "Inter", sans-serif;
+}
+
+/* Animations: ________________________________________________ */
+
+/* For bopping text. */
+@keyframes textBop {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(-0.5rem)}
+    100% {transform: translateY(0rem)}
+}
+
+/* For fading-in text. */
+@keyframes textFadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* For waving text. */
+@keyframes textWave {
+    0% {transform: translateY(0px)}
+    12.5% {transform: translateY(-2px)}
+    25% {transform: translateY(-4px)}
+    37.5% {transform: translateY(-2px)}
+    50% {transform: translateY(0px)}
+    100% {transform: translateY(0px)}
+}
+
+/* For individual letter delays in waving text. */
+.wave-text span:nth-child(1) {animation-delay: 0s;}
+.wave-text span:nth-child(2) {animation-delay: 0.2s;}
+.wave-text span:nth-child(3) {animation-delay: 0.4s;}
+.wave-text span:nth-child(4) {animation-delay: 0.6s;}
+.wave-text span:nth-child(5) {animation-delay: 0.8s;}
+.wave-text span:nth-child(6) {animation-delay: 1s;}
+.wave-text span:nth-child(7) {animation-delay: 1.2s;}
+.wave-text span:nth-child(8) {animation-delay: 1.4s;}
+.wave-text span:nth-child(9) {animation-delay: 1.6s;}
+.wave-text span:nth-child(10) {animation-delay: 1.8s;}
+.wave-text span:nth-child(11) {animation-delay: 2s;}
+.wave-text span:nth-child(12) {animation-delay: 2.2s;}
+.wave-text span:nth-child(13) {animation-delay: 2.4s;}
+.wave-text span:nth-child(14) {animation-delay: 2.6s;}
+.wave-text span:nth-child(15) {animation-delay: 2.8s;}
+.wave-text span:nth-child(16) {animation-delay: 3s;}
+.wave-text span:nth-child(17) {animation-delay: 3.2s;}
+.wave-text span:nth-child(18) {animation-delay: 3.4s;}
+.wave-text span:nth-child(19) {animation-delay: 3.6s;}
+.wave-text span:nth-child(20) {animation-delay: 3.8s;}
+
+/* For individual letters in waving text. */
+.wave-text span {
+    animation: textWave 3s linear infinite;
+    display: inline-block;
+}
+
+/* For words in waving text. */
+.wave-word { 
+    display: inline-block; 
+    white-space: nowrap; 
+}
+
+/* Body: ______________________________________________________ */
+
+/* For page background. */
+body {
+    background-image: radial-gradient(#9ED6DE 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+/* Navigation Bar: ____________________________________________ */
+
+/* For navigation bar. */
+#page-navbar {
+    backdrop-filter: blur(2.5px);
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1rem 0 1rem;
+    padding: 1.1rem;
+    position: sticky;
+    top: 1rem;
+    -webkit-backdrop-filter: blur(2.5px);
+    z-index: 10;
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#page-navbar:hover {
+    background: #373F51;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.01);
+}
+
+/* For navigation bar tab text. */
+#page-navbar a {
+    transition: color 0.25s ease;
+}
+
+.navbar-tab a {
+    color: #373F51; 
+    font-size: 1.33rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+#page-navbar:hover a {
+    color: white;
+}
+
+.navbar-tab:hover a {
+    color: #BCC5DB !important;
+}
+
+/* For navigation bar tabs. */
+.navbar-tab {
+    transition: transform 0.25s ease;
+}
+
+.navbar-tab:hover {
+    transform: scale(1.1);
+}
+
+/* For Home tab in navigation bar. */
+#navbar-home-tab {
+    margin-left: 0.55rem;
+}
+
+#navbar-home-tab a {
+    font-weight: 900;
+}
+
+/* For right section of navigation bar. */
+#navbar-right-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin-left: auto;
+}
+
+/* For Projects tab in navigation bar. */
+#navbar-projects-tab {
+    margin-right: 0.55rem;
+}
+
+/* For footer. */
+#page-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3.67rem;
+    text-align: center;
+}
+
+/* Text, Headers, and Content: ________________________________ */
+
+/* For line dividers. */
+.line-divider {
+    border: 0.075rem rgba(55, 63, 81, 0.15) solid;
+    width: 85%;
+}
+
+#projects-section .line-divider {
+    transition: border 0.25s ease;
+}
+
+#projects-section:hover .line-divider {
+    border: 0.075rem rgba(255, 255, 255, 0.15) solid;
+}
+
+/* For h2's. */
+h2 {
+    margin-top: 0.25rem;
+}
+
+/* For hyperlinks. */
+.hyperlink {
+    color: #58A4B0;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.hyperlink:hover {
+    color: #BCC5DB !important;
+}
+
+/* For address. */
+address {
+    color: #373F51;
+    font-style: normal;
+    font-weight: bold;
+    transition: transform 0.25s ease;
+}
+
+address:hover {
+    transform: scale(1.025);
+}
+
+/* For bold text. */
+.bold-text {
+    font-weight: bold;
+}
+
+/* For non-bold text. */
+.non-bold-text {
+    animation: none !important;
+    font-weight: normal !important;
+}
+
+/* For italicized text. */
+.italicized-text {
+    font-style: italic;
+}
+
+/* For section headers. */
+.section-header {
+    color: #556CA3;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+/* For section subheaders. */
+.section-subheader {
+    color: #556CA3;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* For more specific subheaders*/
+.section-subheader-specific {
+    color: #556CA3;
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+h3 .section-subheader-specific {
+    margin-bottom: 0;
+}
+
+.section-subheader-specific:hover{
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+/* For section content. */
+.section-text-content {
+    animation: textFadeIn 1.75s ease forwards;
+    font-size: 1.25rem;
+    transition: transform 0.25s ease;
+}
+
+.section-text-content:hover {
+    transform: scale(1.025);
+}
+
+/* Home Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+/* For Home section header. */
+#home-section-header {
+    animation: textBop 1.75s ease-in-out infinite;
+    justify-self: center;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+/* For Home section content. */
+#home-section-content {
+    color: #373F51;
+    text-align: center;
+}
+
+/* For Home section description. */
+#home-section-description {
+    margin: 1.5rem;
+}
+
+/* For Home section logos. */
+#home-section-logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1rem;
+    justify-content: center;
+}
+
+/* About Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+/* For About section. */
+#about-section {
+    align-self: center;
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 1rem;
+    -webkit-backdrop-filter: blur(1px);
+    width: 90%;
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#about-section:hover {
+    background: #58A4B0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.01);
+}
+
+/* For About section header. */
+#about-section-header:hover {
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+#about-section #about-section-header {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#about-section:hover #about-section-header {
+    color: white;
+}
+
+/* For About section content. */
+#about-section-content {
+    display: flex;
+}
+
+#about-section-content1, 
+#about-section-content2,
+#about-section-content3 {
+    color: #373F51;
+    text-align: justify;
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+#about-section-content1:hover,
+#about-section-content2:hover,
+#about-section-content3:hover {
+    transform: scale(1.025);
+}
+
+#about-section #about-section-content1,
+#about-section #about-section-content2, 
+#about-section #about-section-content3 {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#about-section:hover #about-section-content1,
+#about-section:hover #about-section-content2,
+#about-section:hover #about-section-content3 {
+    color: white;
+}
+
+/* Skills Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  */
+
+/* For Skills section header. */
+#skills-section-header {
+    margin: 1.5rem;
+}
+
+/* For Skills section subheader. */
+#skills-section-subheader1,
+#skills-section-subheader2 {
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#skills-section-subheader1:hover,
+#skills-section-subheader2:hover,
+#skills-section-subheader3:hover {
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+#skills-section-header:hover {
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+/* For Skills section description. */
+#skills-section-description {
+    color: #373F51;
+}
+
+/* For Skills section content. */
+#skills-section-content1 {
+    margin: 1.5rem;
+    text-align: justify;
+}
+
+#skills-section-content2,
+#skills-section-content3,
+#skills-section-content4 {
+    color: #373F51;
+    margin: 1.5rem 2.5rem 2.25rem 2.5rem;
+    text-align: justify;
+}
+
+/* For Skills section language/tool entry. */
+.skills-entry-language-tools {
+    align-content: center;
+    justify-items: center;
+}
+
+.skills-entry-language-tools:hover .logo-container {
+    transform: scale(1.1);
+}
+
+.skills-entry-language-tools:hover .skills-name {
+    color: #556CA3;
+    transform: scale(1.1);
+}
+
+/* For Skills section language/tool entry name. */
+.skills-name {
+    color: #373F51;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-align: center;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+/* Projects Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  */
+
+/* For Projects section. */
+#projects-section {
+    align-self: center;
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 1rem 1rem 2.15rem 1rem;
+    -webkit-backdrop-filter: blur(1px);
+    width: 90%;
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#projects-section:hover {
+    background: #58A4B0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.01);
+}
+
+/* For Projects section headers and subheaders. */
+#projects-section-header {
+    margin: 1.5rem;
+}
+
+#projects-section-header:hover {
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+#projects-section #projects-section-header,
+#projects-section #projects-section-subheader1, 
+#projects-section #projects-section-subheader2, 
+#projects-section #projects-section-subheader3, 
+#projects-section #projects-section-subheader4 {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#projects-section:hover #projects-section-header,
+#projects-section:hover #projects-section-subheader1, 
+#projects-section:hover #projects-section-subheader2, 
+#projects-section:hover #projects-section-subheader3, 
+#projects-section:hover #projects-section-subheader4 {
+    color: white;
+}
+
+#projects-section-subheader1:hover,
+#projects-section-subheader2:hover,
+#projects-section-subheader3:hover,
+#projects-section-subheader4:hover {
+    animation: textBop 1.75s ease-in-out infinite;
+}
+
+/* For Projects section description. */
+#projects-section-description {
+    color: #373F51;
+    margin: 1.5rem;
+    text-align: justify;
+}
+
+#projects-section #projects-section-description {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#projects-section:hover #projects-section-description {
+    color: white;
+}
+
+/* For Projects section hyperlinks. */
+#projects-section .hyperlink {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#projects-section:hover .hyperlink {
+    color: #D8DBE2;
+}
+
+/* For Projects section content. */
+#projects-section-content1, 
+#projects-section-content2, 
+#projects-section-content3,
+#projects-section-content4 {
+    color: #373F51;
+    text-align: justify;
+    transition: transform 0.25s ease;
+}
+
+#projects-section #projects-section-content1,
+#projects-section #projects-section-content2,
+#projects-section #projects-section-content3,
+#projects-section #projects-section-content4 {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#projects-section:hover #projects-section-content1,
+#projects-section:hover #projects-section-content2,
+#projects-section:hover #projects-section-content3,
+#projects-section:hover #projects-section-content4 {
+    color: white;
+}
+
+/* Images: ____________________________________________________ */
+
+/* For logo container. */
+.logo-container {
+    aspect-ratio: 1/1;
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    padding: 1rem;
+    -webkit-backdrop-filter: blur(1px);
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.logo-container:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.1);
+}
+
+/* For .svg paths in logo container. */
+.logo-container path {
+    transition: fill 0.25s ease;
+}
+
+.logo-container:hover path {
+    fill: white;
+}
+
+/* For footer icon.*/
+#footer-icon {
+    backdrop-filter: blur(1px);
+    height: 1.25rem;
+    -webkit-backdrop-filter: blur(1px);
+    width: 1.25rem;
+}
+
+#footer-icon:hover {
+    background: #373F51;
+}
+
+/* For Projects logos.*/
+.projects-logo {
+    background: white;
+    height: 3rem;
+    width: 3rem;
+}
+
+/* For Gmail logo container background. */
+#gmail-logo-container:hover {
+    background: #EA4335;
+}
+
+/* For GitHub logo (Home section) container background. */
+#github-logo-container-home:hover {
+    background: #24292E;
+}
+
+/* For GitHub logo (Skills section) container background. */
+.skills-entry-language-tools:hover #github-logo-container-skills {
+    background: #24292E;
+}
+
+.skills-entry-language-tools:hover #github-logo-container-skills path {
+    fill: white;
+}
+
+/* For GitHub logo (Projects section) container background. */
+#github-logo-container-projects1:hover,
+#github-logo-container-projects2:hover {
+    background: #24292E;
+}
+
+/* For LinkedIn logo container background and path. */
+#linkedin-logo-container:hover {
+    background: #0077B5;
+}
+
+.logo-container #linkedin-inner-path {
+    transition: fill 0.25s ease;
+}
+
+.logo-container:hover #linkedin-inner-path {
+    fill: #0077B5;
+}
+
+/* For resume icon container background. */
+#resume-icon-container:hover {
+    background: #4F7942;
+}
+
+/* For Python logo container background and path. */
+.skills-entry-language-tools:hover #python-logo-container {
+    background: #4B8BBE;
+}
+
+.skills-entry-language-tools:hover #python-logo-container path {
+    fill: white;
+}
+
+/* For C logo container background and path. */
+.skills-entry-language-tools:hover #c-logo-container {
+    background: #A9BACD;
+}
+
+.skills-entry-language-tools:hover #c-logo-container path {
+    fill: white;
+}
+
+/* For Java logo container background. */
+.skills-entry-language-tools:hover #java-logo-container {
+    background: #F89A20;
+}
+
+.skills-entry-language-tools:hover #java-logo-container path {
+    fill: white;
+}
+
+/* For R logo container background. */
+.skills-entry-language-tools:hover #r-logo-container {
+    background: #276DC2;
+}
+
+.skills-entry-language-tools:hover #r-logo-container path {
+    fill: white;
+}
+
+/* For HTML logo container background. */
+.skills-entry-language-tools:hover #html-logo-container {
+    background: #F06529;
+}
+
+.skills-entry-language-tools:hover #html-logo-container path {
+    fill: white;
+}
+
+/* For CSS logo container background and path. */
+.skills-entry-language-tools:hover #css-logo-container {
+    background: rebeccapurple;
+}
+
+.skills-entry-language-tools:hover #css-logo-container path {
+    fill: white;
+}
+
+.skills-entry-language-tools:hover #css-inner-path {
+    fill: rebeccapurple !important;
+}
+
+/* For JavaScript logo container background and path. */
+.skills-entry-language-tools:hover #javascript-logo-container {
+    background: #F7DF1E;
+}
+
+.skills-entry-language-tools:hover #javascript-logo-container path {
+    fill: white;
+}
+
+.skills-entry-language-tools:hover #javascript-inner-path {
+    fill: #F7DF1E !important;
+}
+
+/* For Google Workspace logo container background. */
+.skills-entry-language-tools:hover #workspace-logo-container {
+    background: #4285F4;
+}
+
+.skills-entry-language-tools:hover #workspace-logo-container path {
+    fill: white;
+}
+
+/* For Microsoft Office logo container background. */
+.skills-entry-language-tools:hover #ms-office-logo-container {
+    background: #B3191C;
+}
+
+.skills-entry-language-tools:hover #ms-office-logo-container path {
+    fill: white;
+}
+
+/* For Figma logo container background. */
+.skills-entry-language-tools:hover #figma-logo-container {
+    background: #03011C;
+}
+
+.skills-entry-language-tools:hover #figma-logo-container path {
+    fill: white;
+}
+
+/* For Visual Studio Code logo container background. */
+.skills-entry-language-tools:hover #vs-code-logo-container {
+    background: #0078D7;
+}
+
+.skills-entry-language-tools:hover #vs-code-logo-container path {
+    fill: white;
+}
+
+/* For Eclipse logo container background. */
+.skills-entry-language-tools:hover #eclipse-logo-container {
+    background: #2C2255;
+}
+
+.skills-entry-language-tools:hover #eclipse-logo-container path {
+    fill: white;
+}
+
+/* For RStudio logo container background. */
+.skills-entry-language-tools:hover #rstudio-logo-container {
+    background: #71A4D4;
+}
+
+.skills-entry-language-tools:hover #rstudio-logo-container path {
+    fill: white;
+}
+
+/* For Shiny logo container background. */
+.skills-entry-language-tools:hover #shiny-logo-container {
+    background: #0189DC;
+}
+
+.skills-entry-language-tools:hover #shiny-logo-container path {
+    fill: white;
+}
+
+/* For Google Drive logo container background. */
+#gdrive-logo-container1:hover,
+#gdrive-logo-container2:hover {
+    background: #348A53;
+}
+
+/* For personal photo. */
+#personal-photo {
+    align-self: center;
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    height: auto;
+    width: clamp(12rem, 50%, 18rem);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#personal-photo:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.05);
+}
+
+/* For project photos. */
+.projects-entry-photo {
+    align-self: center;
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    height: auto;
+    width: clamp(18rem, 50%, 28rem);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.projects-entry-photo:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.05);
+}
+
+/* Subsections: _______________________________________________ */
+
+/* Home Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+/* For Home subsection 1. */
+#home-subsection1 {
+    padding: 1rem;
+}
+
+/* About Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+/* For About subsection 1. */
+#about-subsection1 {
+    align-self: center;
+    justify-self: flex-start;
+    padding: 0 4rem 1.5rem 4rem;
+    width: 67%;
+}
+
+/* Skills Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  */
+
+/* For Skills subsection 1. */
+#skills-subsection1 {
+    align-items: center;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+/* For Skills subsection 2. */
+#skills-subsection2{
+    align-items: flex-start;
+    display: flex;
+    flex: row;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+/* For Skills subsection 3. */
+#skills-subsection3 {
+    margin-top: -0.25rem;
+}
+
+/* For languages in Skills subsection 2. */
+#skills-section-languages {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 4rem;
+    min-width: 0;
+}
+
+/* For tools in Skills subsection 2. */
+#skills-section-tools {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 4rem;
+    min-width: 0;
+}
+
+#skills-section-languages-logos,
+#skills-section-tools-logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1rem;
+    justify-content: center;
+}
+
+/* For entries in Skills subsection 2. */
+#skills-section-languages-logos .skills-entry-language-tools,
+#skills-section-tools-logos .skills-entry-language-tools { 
+    flex: 0 1 8rem;
+    max-width: 12rem;
+}
+
+/* For management skills in Skills subsection 3. */
+#skills-section-management-skills {
+    display: flex;
+    gap: 3.15rem;
+    margin: 2.25rem auto;
+    justify-content: space-between;
+    width: 90%;
+}
+
+/* For entries in Skills subsection 2. */
+.skills-entry-management {
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    flex: 1;
+    margin: 1.5rem 0 1.5rem 0;
+    min-width: 0;
+    -webkit-backdrop-filter: blur(1px);
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.skills-entry-management:hover {
+    background: #58A4B0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
+    transform: scale(1.05);
+}
+
+.skills-entry-management .section-subheader-specific,
+.skills-entry-management .section-text-content {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.skills-entry-management:hover .section-subheader-specific,
+.skills-entry-management:hover #skills-section-content2,
+.skills-entry-management:hover #skills-section-content3,
+.skills-entry-management:hover #skills-section-content4 {
+    color: white;
+}
+
+/* Projects Section: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  */
+
+/* For Projects subsection 1. */
+#projects-subsection1 {
+    align-items: center;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+/* For other Projects subsections. */
+#projects-subsection2{
+    display: flex;
+    flex-direction: row;
+    gap: 3.15rem;
+    margin: 0.75rem 3rem 2rem 3rem;
+}
+
+#projects-subsection3,
+#projects-subsection4,
+#projects-subsection5 {
+    display: flex;
+    flex-direction: row;
+    gap: 3.15rem;
+    margin: 2rem 3rem;
+}
+
+/* For entries in Projects subsections 2-5. */
+.projects-entry {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+/* Media Queries: _____________________________________________ */
+
+/* Media query for screens >= 769px. */
+@media (min-width: 769px) { 
+
+    /* For personal photo. */
+    #personal-photo { 
+        margin: 0 4rem 0 auto; 
+    } 
+}
+
+/* Media query for screens <= 1024px. */
+@media (max-width: 1024px) {
+
+    /* For Home section logos. */
+    #home-section-logos .logo-container {
+        flex: 0 1 2rem;
+    }
+
+    /* For Skills section subheaders. */
+    #skills-section-subheader1 {
+        margin-top: 1.2rem;
+    }
+
+    #skills-section-subheader2 {
+        margin-top: 0.9rem;
+    }
+
+    #skills-section-subheader3 {
+        margin-top: 1.1rem;
+    }
+
+    #skills-section-subheader1,
+    #skills-section-subheader2,
+    #skills-section-subheader3 {
+        margin-bottom: 0.9rem;
+    }
+
+    /* For Skills subsection 1. */
+    #skills-subsection1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* For Skills subsection 2. */
+    #skills-subsection2{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* For languages in Skills subsection 2. */
+    #skills-section-languages {
+        margin: 0;
+    }
+
+    /* For tools in Skills subsection 2. */
+    #skills-section-tools {
+        margin: 0;
+    }
+
+    /* For entries in Skills subsection 2. */
+    #skills-section-languages-logos .skills-entry-language-tools,
+    #skills-section-tools-logos .skills-entry-language-tools { 
+        flex: 0 1 2rem;
+    }
+
+    /* For management skills in Skills subsection 3. */
+    #skills-section-management-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* For Projects subsections. */
+    #projects-subsection1,
+    #projects-subsection2,
+    #projects-subsection3,
+    #projects-subsection4,
+    #projects-subsection5 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.75rem;
+    }
+}
+
+/* Media query for screens <= 768px. */
+@media (max-width: 768px) {
+
+    /* For navigation bar. */
+    #page-navbar {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.15rem;
+    }
+
+    /* For right section of navigation bar. */
+    #navbar-right-section { 
+        align-self: center; 
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    /* For Home and Projects tab in navigation bar. */
+    #navbar-home-tab,
+    #navbar-projects-tab {
+        margin: auto;
+    }
+
+    /* For Home section logos. */
+    #home-section-logos .logo-container {
+        flex: 0 1 4rem;
+    }
+
+    /* For About section. */
+    #about-section {
+        padding-bottom: 3rem;
+    }
+
+    /* For About section header. */
+    #about-section-header {
+        text-align: center;
+    }
+
+    /* For About section content. */
+    #about-section-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-section-content1, 
+    #about-section-content2,
+    #about-section-content3 {
+        transform-origin: center;
+    }
+
+    /* For entries in Skills subsection 2. */
+    #skills-section-languages-logos .skills-entry-language-tools,
+    #skills-section-tools-logos .skills-entry-language-tools { 
+        flex: 0 1 4rem;
+    }
+
+    /* For personal photo. */
+    #personal-photo {
+        align-self: center;
+        margin: auto;
+    }
+}
